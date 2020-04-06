@@ -1,3 +1,4 @@
+## C/C++ related files
 # Prerequisites
 *.d
 
@@ -50,3 +51,79 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+## VHDL-related files
+# ignore some of Quartus II generated files
+*_generation_script*
+*_inst.vhd
+*.bak
+*.rdb
+*.hdb
+*.qmsg
+*.pin
+*.pof
+*.ptf.*
+*.qar
+*.qarlog
+*.qws
+*.smsg
+*.sof
+*.sopc_builder
+*.tcl
+*.sci
+*.db_info
+*.sld_design_entry
+*.sci
+
+# ignore Quartus II generated folders
+*/db/
+db/
+incremental_db
+*/incremental_db
+*_output_files/
+*PLLJ_PLLSPE_INFO.txt
+
+## ModelSim Generated Files
+# ignore compilation output of ModelSim
+*.mti
+*.dat
+*.dbs
+*.psm
+*.bak
+*.cmp
+# *.jpg # Just in case our images are in .jpg
+*.html
+*.bsf
+
+# ignore simulation output of ModelSim
+wlf*
+*.wlf
+*.vstf
+*.ucdb
+cov*/
+transcript*
+sc_dpiheader.h
+
+## Office Temporary Files
+*.tmp
+
+# Word temporary
+~$*.doc*
+
+# Word Auto Backup File
+Backup of *.doc*
+
+# Excel temporary
+~$*.xls*
+
+# Excel Backup File
+*.xlk
+
+# PowerPoint temporary
+~$*.ppt*
+
+# Visio autosave temporary files
+*.~vsd*
+
+## Project-specific files
+*_typ.csd
