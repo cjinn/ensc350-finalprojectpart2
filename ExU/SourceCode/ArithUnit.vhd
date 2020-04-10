@@ -36,8 +36,8 @@ begin
 	Sig_B <= B when (AddnSub = '0') else
 		   Not B when (AddnSub = '1');
 	   
-    ArithAdder:  entity work.Adder(rtl) generic map (N)
-      port map (Sig_A, Sig_B, AddY, AddnSub, coutSignal, overflow);
+  ArithAdder:  entity work.Adder(rtl) generic map (N)
+    port map (Sig_A, Sig_B, AddY, AddnSub, coutSignal, overflow);
     
   -- Sign Extension
 	signExt: for i in 0 to 31 generate
