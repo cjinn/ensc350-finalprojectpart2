@@ -1,3 +1,6 @@
+library ieee; 
+use ieee.std_logic_1164.all;
+
 Entity SRA64 is
   Generic (N : natural := 64);
   Port(
