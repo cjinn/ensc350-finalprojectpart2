@@ -11,7 +11,7 @@ Entity ShiftUnit is operation
     Y       : out std_logic_vector( N-1 downto 0 ));
 End Entity ShiftUnit;
 
-Architecture rtl of LogicUnit is
+Architecture rtl of ShiftUnit is
   signal tempA        : std_logic_vector(N-1 downto 0);
   signal shiftCount   : std_logic_vector(ceil(log2(real(N))))-1 downto 0);
 
