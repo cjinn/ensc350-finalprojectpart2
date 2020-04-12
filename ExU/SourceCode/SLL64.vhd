@@ -5,16 +5,16 @@
 library ieee; 
 use ieee.std_logic_1164.all; 
 
-Entity MUX4bit32 is
+Entity SLL_MUX4bit32 is
   Generic ( N : natural := 64 );
   Port(
     X           : in std_logic_vector( N-1 downto 0 );
     selectBit   : in std_logic_vector(1 downto 0);
 
     Y           : out std_logic_vector( N-1 downto 0 ));
-End Entity MUX4bit32;
+End Entity SLL_MUX4bit32;
 
-Architecture rtl of MUX4bit32 is
+Architecture rtl of SLL_MUX4bit32 is
 begin
   with selectBit select
     Y <=
@@ -28,16 +28,16 @@ End Architecture rtl;
 library ieee; 
 use ieee.std_logic_1164.all;
 
-Entity MUX4bit8 is
+Entity SLL_MUX4bit8 is
   Generic ( N : natural := 64 );
   Port(
     X           : in std_logic_vector( N-1 downto 0 );
     selectBit   : in std_logic_vector(1 downto 0);
 
     Y           : out std_logic_vector( N-1 downto 0 ));
-End Entity MUX4bit8;
+End Entity SLL_MUX4bit8;
 
-Architecture rtl of MUX4bit8 is
+Architecture rtl of SLL_MUX4bit8 is
 begin
   with selectBit select
     Y <=
@@ -51,16 +51,16 @@ End Architecture rtl;
 library ieee; 
 use ieee.std_logic_1164.all;
 
-Entity MUX4bit2 is
+Entity SLL_MUX4bit2 is
   Generic ( N : natural := 64 );
   Port(
     X           : in std_logic_vector( N-1 downto 0 );
     selectBit   : in std_logic_vector(1 downto 0);
 
     Y           : out std_logic_vector( N-1 downto 0 ));
-End Entity MUX4bit2;
+End Entity SLL_MUX4bit2;
 
-Architecture rtl of MUX4bit2 is
+Architecture rtl of SLL_MUX4bit2 is
 begin
   with selectBit select
     Y <=
@@ -93,9 +93,9 @@ Architecture rtl of SLL64 is
   signal tempX : std_logic_vector(N-1 downto 0);
   signal tempY : std_logic_vector(N-1 downto 0);
 begin
-    Mux1 : entity Work.MUX4bit32 generic map(64) port map(tempX, std_logic_vector(ShiftCount(5 downto 4)), tempY);
-    Mux2 : entity Work.MUX4bit8 generic map(64) port map(tempX, std_logic_vector(ShiftCount(3 downto 2)), tempY);
-    Mux3 : entity Work.MUX4bit2 generic map(64) port map(tempX, std_logic_vector(ShiftCount(1 downto 0)), tempY);
+    Mux1 : entity Work.SLL_MUX4bit32 generic map(64) port map(tempX, std_logic_vector(ShiftCount(5 downto 4)), tempY);
+    Mux2 : entity Work.SLL_MUX4bit8 generic map(64) port map(tempX, std_logic_vector(ShiftCount(3 downto 2)), tempY);
+    Mux3 : entity Work.SLL_MUX4bit2 generic map(64) port map(tempX, std_logic_vector(ShiftCount(1 downto 0)), tempY);
     tempX <= tempY;
   Y <= tempY;
 End Architecture rtl;
