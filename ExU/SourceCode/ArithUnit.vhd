@@ -1,6 +1,5 @@
 library ieee;
 Use ieee.std_logic_1164.all;
-Use std.TEXTIO.all;
 Use ieee.numeric_std.all;
 
 Entity ArithUnit is
@@ -22,12 +21,13 @@ Entity ArithUnit is
 End Entity ArithUnit;
 
 Architecture rtl of ArithUnit is
-  signal Sig_A : std_logic_vector(N-1 downto 0);
-  signal Sig_B : std_logic_vector(N-1 downto 0);
-  signal SgnExt : std_logic_vector(N-1 downto 0);
+  signal Sig_A        : std_logic_vector(N-1 downto 0);
+  signal Sig_B        : std_logic_vector(N-1 downto 0);
+  signal SgnExt       : std_logic_vector(N-1 downto 0);
 
-  signal overflow : std_logic;
-  signal coutSignal : std_logic;
+  signal AdderOutput  : std_logic_vector(N-1 downto 0);
+  signal overflow     : std_logic;
+  signal coutSignal   : std_logic;
 begin
   
 	Sig_A <= A when (NotA = '0') else
