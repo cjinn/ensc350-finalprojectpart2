@@ -18,8 +18,8 @@ Entity ShiftUnit is
 End Entity ShiftUnit;
 
 Architecture rtl of ShiftUnit is
-  signal tempA        : std_logic_vector(N-1 downto 0);
-  signal shiftCount   : unsigned(integer(ceil(log2(real(N))))-1 downto 0);
+  signal tempA          : std_logic_vector(N-1 downto 0);
+  signal shiftCount     : unsigned(integer(ceil(log2(real(N))))-1 downto 0);
 
   signal shiftedLL_A    : std_logic_vector(N-1 downto 0);
   signal shiftedRL_A    : std_logic_vector(N-1 downto 0);
@@ -32,7 +32,7 @@ Architecture rtl of ShiftUnit is
   signal extendedAC     : std_logic_vector(N-1 downto 0);
 begin
   -- Extract ShiftCount from B
-  shiftCount <= B (integer(ceil(log2(real(N))))-1 downto 0); -- lower 6 bits of the register for 64-bit operations
+  shiftCount <= unsigned(B(integer(ceil(log2(real(N))))-1 downto 0)); -- lower 6 bits of the register for 64-bit operations
 
   -- Mux for A
   with ShiftFN(1) and ExtWord select
