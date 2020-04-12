@@ -13,6 +13,9 @@ Entity ExecUnit is
 End Entity ExecUnit;
 
 Architecture rtl of ExecUnit is
+  -- Constants
+  constant AllZeros : std_logic_vector(N'range) := (others => '0');
+
   -- ArithUnit Signals
   signal AdderAddY    : std_logic_vector(N-1 downto 0);
   signal AdderResult  : std_logic_vector(N-1 downto 0);
@@ -41,8 +44,8 @@ begin
   -- Pick which results from which unit with a mux
   with FuncClass select
     Y <=
-      AltBu and "000000" when "00", -- Check this: to-do
-      AltB and "000000" when "01", -- Check this: to-do
+      AltBu and AllZeros when "00",
+      AltB and AllZeros when "01",
       ShiftResult when "10",
       LogicResult when "11",
       (others => 'X') when others;

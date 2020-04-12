@@ -30,7 +30,7 @@ Architecture rtl of ShiftUnit is
 begin
   -- Extract ShiftCount from B
   shiftCount(ceil(log2(real(N))))-1 downto 0)
-    <= B (ceil(log2(real(N))))-1 downto 0); -- Need to refer to RISC-V ISA: To-do
+    <= B (ceil(log2(real(N))))-1 downto 0); -- lower 6 bits of the register for 64-bit operations
 
   -- Mux for A
   with ShiftFN(1) and ExtWord select
@@ -62,14 +62,14 @@ begin
   with ExtWord select
     extendedA <=
     shiftedRightA when "0",
-    shiftedRightA when "1", -- SgnExt Upper: To-do
+    (shiftedRightA(N/2 - 1 downto 0, others => shiftedRightA(N/2 - 1)) when "1",
     (others => 'X') when others;
 
   -- SgnExt Lower Mux
   with ExtWord select
     extendedAC <=
       AC when "0",
-      shiftedRA_A when "1", -- SgnExt Lower: To-do
+      (shiftedRightA(others => shiftedRightA(N/2 - 1), N/2 - 1 downto 0) when "1",
       (others => 'X') when others;
 
   -- Last Mux
