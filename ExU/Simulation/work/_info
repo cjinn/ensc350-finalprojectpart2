@@ -21,9 +21,9 @@ VZHAU2hFz?LddiHSBOi89c1
 !s100 @g3U;i0g;PXEYJG^bi]`Q3
 Z6 OV;C;10.5b;63
 32
-Z7 !s110 1586675669
+Z7 !s110 1586740677
 !i10b 1
-Z8 !s108 1586675669.000000
+Z8 !s108 1586740677.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/Adder.vhd|
 Z10 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/Adder.vhd|
 !i113 1
@@ -61,9 +61,9 @@ VejPoP?B5AZVkcia^IX>:z1
 !s100 8=KSkgNSAC001Z_Mc?Z4Q3
 R6
 32
-Z18 !s110 1586675670
+Z18 !s110 1586740678
 !i10b 1
-Z19 !s108 1586675670.000000
+Z19 !s108 1586740678.000000
 Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicGates.vhd|
 Z21 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicGates.vhd|
 !i113 1
@@ -102,9 +102,9 @@ VV8obkDY;iWRMie9E[0SQL2
 !s100 [Bff4ZQ3l4IP<g8[VeWEi0
 R6
 32
-R7
+R18
 !i10b 1
-R8
+R19
 Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ArithUnit.vhd|
 Z30 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ArithUnit.vhd|
 !i113 1
@@ -122,9 +122,9 @@ V5Q6i>Von;k?LNMiNi[eN31
 !s100 21:@b_0_DGMZnTiVog<Sm1
 R6
 32
-R7
+R18
 !i10b 1
-R8
+R19
 R29
 R30
 !i113 1
@@ -144,9 +144,9 @@ V5ThC3Pk=j7dE1=JjmPd@V2
 !s100 J75N2bo<jRLa[ekhB5Y`f1
 R6
 32
-R7
+R18
 !i10b 1
-R8
+R19
 Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ExecUnit.vhd|
 Z36 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ExecUnit.vhd|
 !i113 1
@@ -155,7 +155,7 @@ R12
 Artl
 Z37 DEx4 work 9 logicunit 0 22 MImIblSUg`0Wlgb`e;>?E1
 Z38 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
-DEx4 work 9 shiftunit 0 22 WF2R1==_BZ3:BddEL2bET1
+DEx4 work 9 shiftunit 0 22 Y66BBKBXI0TU2bhmQiUM<2
 R26
 R31
 R15
@@ -168,9 +168,9 @@ VG4@iaimIJZ_WGQ@Hh[W^61
 !s100 lCRBH;ffiZPkdheS2W]nJ3
 R6
 32
-R7
+R18
 !i10b 1
-R8
+R19
 R35
 R36
 !i113 1
@@ -191,9 +191,9 @@ VMImIblSUg`0Wlgb`e;>?E1
 !s100 K5hO=E]c@R5SP=<ceH`f?1
 R6
 32
-R7
+R18
 !i10b 1
-R8
+R19
 Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicUnit.vhd|
 Z43 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicUnit.vhd|
 !i113 1
@@ -214,9 +214,9 @@ V4`DdzchkfDQTl98Jz@MWQ2
 !s100 TR`K8m]Pi5j09R>ID]=M[3
 R6
 32
-R7
+R18
 !i10b 1
-R8
+R19
 R42
 R43
 !i113 1
@@ -265,6 +265,123 @@ R21
 !i113 1
 R11
 R12
+Emux4bit2
+Z49 w1586727532
+R1
+R2
+R3
+Z50 8C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd
+Z51 FC:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd
+l0
+L54
+VcS1DPJ6218nWXjI56@UB10
+!s100 `6:nWPd3e`H4QkFeVAao[2
+R6
+32
+Z52 !s110 1586735409
+!i10b 1
+Z53 !s108 1586735409.000000
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd|
+Z55 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd|
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+DEx4 work 8 mux4bit2 0 22 cS1DPJ6218nWXjI56@UB10
+l64
+L63
+V2L_WS>C8[eKmgzSZ5;LM00
+!s100 nmlSmBQKQRe6mz<O0i]1=1
+R6
+32
+R52
+!i10b 1
+R53
+R54
+R55
+!i113 1
+R11
+R12
+Emux4bit32
+R49
+R1
+R2
+R3
+R50
+R51
+l0
+L8
+V1=@>Cf6kVMa8j<Pi:Zzfi3
+!s100 :;2XAZWh:Q2V3nkPXXZ_n1
+R6
+32
+R52
+!i10b 1
+R53
+R54
+R55
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+DEx4 work 9 mux4bit32 0 22 1=@>Cf6kVMa8j<Pi:Zzfi3
+l18
+L17
+V`cB<O02jLM1@UI:8HUE8H0
+!s100 VBf=ES>MZ4R6dJgzkn0]d1
+R6
+32
+R52
+!i10b 1
+R53
+R54
+R55
+!i113 1
+R11
+R12
+Emux4bit8
+R49
+R1
+R2
+R3
+R50
+R51
+l0
+L31
+V=FNN:If;jZSc0?GI7>k023
+!s100 GXUd:VB`KGl1F]QhF9d5z1
+R6
+32
+R52
+!i10b 1
+R53
+R54
+R55
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+DEx4 work 8 mux4bit8 0 22 =FNN:If;jZSc0?GI7>k023
+l41
+L40
+VTiD@Ri<6DG?bT_hIoI>W62
+!s100 a<3OL`Q16UYAaVO;9W[^K0
+R6
+32
+R52
+!i10b 1
+R53
+R54
+R55
+!i113 1
+R11
+R12
 Eorgate
 R14
 R15
@@ -294,8 +411,8 @@ R2
 R45
 l41
 L40
-Z49 VEojebho>BDe5lk821U<C<1
-Z50 !s100 3g]bY^3h:H67elE3<`Kfg1
+Z56 VEojebho>BDe5lk821U<C<1
+Z57 !s100 3g]bY^3h:H67elE3<`Kfg1
 R6
 32
 R18
@@ -307,7 +424,8 @@ R21
 R11
 R12
 Eshiftunit
-w1586675652
+w1586739189
+R26
 R38
 R15
 R1
@@ -316,148 +434,505 @@ R3
 8C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ShiftUnit.vhd
 FC:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ShiftUnit.vhd
 l0
-L10
-VWF2R1==_BZ3:BddEL2bET1
-!s100 ]I[:nGVZeM7?DKo03<[C61
+L11
+VY66BBKBXI0TU2bhmQiUM<2
+!s100 2j`TQGMSGd1NHB?<7ebUI1
 R6
 32
-R7
+R18
 !i10b 1
-R8
+R19
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ShiftUnit.vhd|
 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ShiftUnit.vhd|
 !i113 1
 R11
 R12
 Esll64
-Z51 w1586672705
-R26
+Z58 w1586735433
 R38
+R26
 R1
 R2
 R3
-Z52 8C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd
-Z53 FC:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd
+R50
+R51
 l0
-L10
-Vd5=WS:FQbON1l>O>YGHzR0
-!s100 SjYEVj^IUlm>A5iE[OE@j3
+L83
+VUZEC;2fWLPfo_g8WFSUm90
+!s100 Z0zIBTQf:YALW=ih_XT>70
 R6
 32
-R7
+R18
 !i10b 1
-R8
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd|
-Z55 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd|
+R19
+R54
+R55
 !i113 1
 R11
 R12
 Artl
-R46
-R26
+Z59 DEx4 work 12 sll_mux4bit2 0 22 UJeN40YdeaMR8nh0WB[]]0
+Z60 DEx4 work 12 sll_mux4bit8 0 22 <X;8:L4;;jC<6>laSdchN1
+Z61 DEx4 work 13 sll_mux4bit32 0 22 PkSKJd;dC5AJYI;Z7MReK2
 R38
+R26
 R1
 R2
-DEx4 work 5 sll64 0 22 d5=WS:FQbON1l>O>YGHzR0
-l22
-L19
-VZS8BB1HnBci_eHVGc8HnT3
-!s100 Zmd755]ho>n;c@C4AQhPn3
+DEx4 work 5 sll64 0 22 UZEC;2fWLPfo_g8WFSUm90
+l95
+L92
+Vj50VILD^JXn4k`@aD9PDj1
+!s100 RY87ZFPozFoFYD^O2If?T2
 R6
 32
-R7
+R18
 !i10b 1
-R8
+R19
+R54
+R55
+!i113 1
+R11
+R12
+Esll_mux4bit2
+R58
+R1
+R2
+R3
+R50
+R51
+l0
+L54
+VUJeN40YdeaMR8nh0WB[]]0
+!s100 ?hA5]JI43`fhjg@;3K=W23
+R6
+32
+R18
+!i10b 1
+R19
+R54
+R55
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+R59
+l64
+L63
+VVJd9bAL3KO8eHNQcDj15M2
+!s100 a_F3kdWEMRIfoI5GR45?G2
+R6
+32
+R18
+!i10b 1
+R19
+R54
+R55
+!i113 1
+R11
+R12
+Esll_mux4bit32
+R58
+R1
+R2
+R3
+R50
+R51
+l0
+L8
+VPkSKJd;dC5AJYI;Z7MReK2
+!s100 `iPbban^73^n0iPLQ?[R42
+R6
+32
+R18
+!i10b 1
+R19
+R54
+R55
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+R61
+l18
+L17
+V51D>_RQ[M<I@UA6Y4CjM>0
+!s100 fP9e=BYAl72AhRQCF6m:V1
+R6
+32
+R18
+!i10b 1
+R19
+R54
+R55
+!i113 1
+R11
+R12
+Esll_mux4bit8
+R58
+R1
+R2
+R3
+R50
+R51
+l0
+L31
+V<X;8:L4;;jC<6>laSdchN1
+!s100 ML:j5ID4VC`^XzSg?:ZTN2
+R6
+32
+R18
+!i10b 1
+R19
+R54
+R55
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+R60
+l41
+L40
+V5[FGNE3UY8<78iUaRkAWM2
+!s100 dQW7aFL@:og8`EbdFDT:`3
+R6
+32
+R18
+!i10b 1
+R19
 R54
 R55
 !i113 1
 R11
 R12
 Esra64
-Z56 w1586672699
-R26
+R58
 R38
+R26
 R1
 R2
 R3
-Z57 8C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd
-Z58 FC:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd
+Z62 8C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd
+Z63 FC:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd
 l0
-L10
-V_19PQ4NSmjnVYGVEZbFX;0
-!s100 doDW2S1fYm<`ob<Ze6YQI0
+L83
+VHGeS>2UzJz>jJ4>[meAOl1
+!s100 >d:@TKc:C>?MOfE25[_?i3
 R6
 32
-R7
+R18
 !i10b 1
-R8
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd|
-Z60 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd|
+R19
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd|
+Z65 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd|
 !i113 1
 R11
 R12
 Artl
-R46
-R26
+Z66 DEx4 work 12 sra_mux4bit2 0 22 @3C5VzCW?SE:Y0=]T6g1Q2
+Z67 DEx4 work 12 sra_mux4bit8 0 22 BSn3CYQ]76aYi?@5eCad^3
+Z68 DEx4 work 13 sra_mux4bit32 0 22 IZGagMOQ5Z]bNcc<A>5Jf2
 R38
+R26
 R1
 R2
-DEx4 work 5 sra64 0 22 _19PQ4NSmjnVYGVEZbFX;0
-l22
-L19
-VR>L=h>DiLzjMJKePO1z5:2
-!s100 JJYGORTbfk2C_YPhLYNFZ1
+DEx4 work 5 sra64 0 22 HGeS>2UzJz>jJ4>[meAOl1
+l95
+L92
+V7k2^Z^HF=gW6_0LBLQd<^3
+!s100 8jG<g;k8Og>GFb=Tae3LS1
 R6
 32
-R7
+R18
 !i10b 1
-R8
-R59
-R60
+R19
+R64
+R65
+!i113 1
+R11
+R12
+Esra_mux4bit2
+R58
+R1
+R2
+R3
+R62
+R63
+l0
+L54
+V@3C5VzCW?SE:Y0=]T6g1Q2
+!s100 >KAfo0jT@;E6FALALXAne0
+R6
+32
+R18
+!i10b 1
+R19
+R64
+R65
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+R66
+l64
+L63
+VG@7Hdiel0;FU3IYT9NXD10
+!s100 27j]CUMk:db6_V1DO>ZEW2
+R6
+32
+R18
+!i10b 1
+R19
+R64
+R65
+!i113 1
+R11
+R12
+Esra_mux4bit32
+R58
+R1
+R2
+R3
+R62
+R63
+l0
+L8
+VIZGagMOQ5Z]bNcc<A>5Jf2
+!s100 1Id?_ceP911B61lSMZT:E1
+R6
+32
+R18
+!i10b 1
+R19
+R64
+R65
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+R68
+l18
+L17
+V5H7k?hdjmBMB^A>cAAV7=1
+!s100 kR2O;hFaJFG_[LFU4Aooe3
+R6
+32
+R18
+!i10b 1
+R19
+R64
+R65
+!i113 1
+R11
+R12
+Esra_mux4bit8
+R58
+R1
+R2
+R3
+R62
+R63
+l0
+L31
+VBSn3CYQ]76aYi?@5eCad^3
+!s100 @bzY^?5^HE>^86;3?JW7[1
+R6
+32
+R18
+!i10b 1
+R19
+R64
+R65
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+R67
+l41
+L40
+VIRgUCCS=PE^RdNGF>YC;Y0
+!s100 n<bPVb=^N2NAX6YkIYZP?3
+R6
+32
+R18
+!i10b 1
+R19
+R64
+R65
 !i113 1
 R11
 R12
 Esrl64
-Z61 w1586672671
-R26
+R58
 R38
+R26
 R1
 R2
 R3
-Z62 8C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd
-Z63 FC:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd
+Z69 8C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd
+Z70 FC:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd
 l0
-L10
-V@aCnPL[KBGg_dB?6@QXCZ1
-!s100 J0i]W@o<9Ck2kc?I6Ubf?1
+L83
+VcnXQR=P_]KTVREbUd5eEi1
+!s100 R5I5YDz7VYUND<h1IgBD>0
 R6
 32
-R7
+R18
 !i10b 1
-R8
-Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd|
-Z65 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd|
+R19
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd|
+Z72 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd|
 !i113 1
 R11
 R12
 Artl
-R46
-R26
+Z73 DEx4 work 12 srl_mux4bit2 0 22 WB5]KOoU8=^KYUAKSnj>R0
+Z74 DEx4 work 12 srl_mux4bit8 0 22 D@K<G>k?e_LQ:55eEPFEY3
+Z75 DEx4 work 13 srl_mux4bit32 0 22 LoA2N5I:oJmd[_F2aLYoo0
 R38
+R26
 R1
 R2
-DEx4 work 5 srl64 0 22 @aCnPL[KBGg_dB?6@QXCZ1
-l22
-L19
-Vf1V`>;LXebi<NhjP=Z@5z0
-!s100 _ZE2QgYnL1I_3JQX5Bj>P0
+DEx4 work 5 srl64 0 22 cnXQR=P_]KTVREbUd5eEi1
+l95
+L92
+VMMBH<J6lEEdJ61<4fGnk22
+!s100 ]6[Zb_fj43W>M9a]?Z^fl0
 R6
 32
-R7
+R18
 !i10b 1
-R8
-R64
-R65
+R19
+R71
+R72
+!i113 1
+R11
+R12
+Esrl_mux4bit2
+R58
+R1
+R2
+R3
+R69
+R70
+l0
+L54
+VWB5]KOoU8=^KYUAKSnj>R0
+!s100 @WbU@L_9AhLX]I[9bL[K<3
+R6
+32
+R18
+!i10b 1
+R19
+R71
+R72
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+R73
+l64
+L63
+VKkR1;_ZeL=BPohjS?fR>[2
+!s100 `ME153B8OJ01EaMCgOIHY3
+R6
+32
+R18
+!i10b 1
+R19
+R71
+R72
+!i113 1
+R11
+R12
+Esrl_mux4bit32
+R58
+R1
+R2
+R3
+R69
+R70
+l0
+L8
+VLoA2N5I:oJmd[_F2aLYoo0
+!s100 oS>6C[RNf=@X231gIbEo_0
+R6
+32
+R18
+!i10b 1
+R19
+R71
+R72
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+R75
+l18
+L17
+VDbEL=`A29CJ]3O_:Y8h5l3
+!s100 SZliD8oTILeb`4:z`8N`k0
+R6
+32
+R18
+!i10b 1
+R19
+R71
+R72
+!i113 1
+R11
+R12
+Esrl_mux4bit8
+R58
+R1
+R2
+R3
+R69
+R70
+l0
+L31
+VD@K<G>k?e_LQ:55eEPFEY3
+!s100 f31DS84VYh3m^K64@l7gJ0
+R6
+32
+R18
+!i10b 1
+R19
+R71
+R72
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+R74
+l41
+L40
+V[Zm[BdP6L?387XLb[4eS82
+!s100 ^NLBI7IGZ_oiQgR^DfjI=3
+R6
+32
+R18
+!i10b 1
+R19
+R71
+R72
 !i113 1
 R11
 R12
@@ -490,8 +965,8 @@ R2
 R44
 l64
 L63
-Z66 VzZ?2ef87JI`kSmVMKPZO82
-Z67 !s100 3h];S3>;j=<I1dR4W3_>Y0
+Z76 VzZ?2ef87JI`kSmVMKPZO82
+Z77 !s100 3h];S3>;j=<I1dR4W3_>Y0
 R6
 32
 R18
