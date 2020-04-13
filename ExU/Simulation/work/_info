@@ -21,9 +21,9 @@ VZHAU2hFz?LddiHSBOi89c1
 !s100 @g3U;i0g;PXEYJG^bi]`Q3
 Z6 OV;C;10.5b;63
 32
-Z7 !s110 1586746882
+Z7 !s110 1586747677
 !i10b 1
-Z8 !s108 1586746882.000000
+Z8 !s108 1586747677.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/Adder.vhd|
 Z10 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/Adder.vhd|
 !i113 1
@@ -61,9 +61,9 @@ VejPoP?B5AZVkcia^IX>:z1
 !s100 8=KSkgNSAC001Z_Mc?Z4Q3
 R6
 32
-Z18 !s110 1586746883
+Z18 !s110 1586747678
 !i10b 1
-Z19 !s108 1586746883.000000
+Z19 !s108 1586747678.000000
 Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicGates.vhd|
 Z21 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicGates.vhd|
 !i113 1
@@ -447,8 +447,8 @@ Z63 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/
 R11
 R12
 Artl
-Z64 DEx4 work 5 sra64 0 22 HGeS>2UzJz>jJ4>[meAOl1
-Z65 DEx4 work 5 srl64 0 22 cnXQR=P_]KTVREbUd5eEi1
+Z64 DEx4 work 5 sra64 0 22 O7<B8Eh[7T:R]LJQPRe=N3
+Z65 DEx4 work 5 srl64 0 22 DX]THNFkKNF^`cU5C1S4z3
 Z66 DEx4 work 5 sll64 0 22 =Y0XACB8HZZX3SJ72jLWg0
 R26
 R38
@@ -631,48 +631,46 @@ R56
 R11
 R12
 Esra64
-R68
+Z71 w1586747478
 R38
 R26
 R1
 R2
 R3
-Z71 8C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd
-Z72 FC:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd
+Z72 8C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd
+Z73 FC:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd
 l0
-L83
-VHGeS>2UzJz>jJ4>[meAOl1
-!s100 >d:@TKc:C>?MOfE25[_?i3
+L10
+VO7<B8Eh[7T:R]LJQPRe=N3
+!s100 FggBRJY74_WE>;5iILzhc3
 R6
 32
 R7
 !i10b 1
 R8
-Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd|
-Z74 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd|
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd|
+Z75 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd|
 !i113 1
 R11
 R12
 Artl
-Z75 DEx4 work 12 sra_mux4bit2 0 22 @3C5VzCW?SE:Y0=]T6g1Q2
-Z76 DEx4 work 12 sra_mux4bit8 0 22 BSn3CYQ]76aYi?@5eCad^3
-Z77 DEx4 work 13 sra_mux4bit32 0 22 IZGagMOQ5Z]bNcc<A>5Jf2
+R47
 R38
 R26
 R1
 R2
 R64
-l95
-L92
-V7k2^Z^HF=gW6_0LBLQd<^3
-!s100 8jG<g;k8Og>GFb=Tae3LS1
+l41
+L19
+V>52mg[^1b5PD4YU8Pg3F<3
+!s100 XX@DCgAQXCWFLbR6hL_]62
 R6
 32
 R7
 !i10b 1
 R8
-R73
 R74
+R75
 !i113 1
 R11
 R12
@@ -681,37 +679,37 @@ R68
 R1
 R2
 R3
-R71
 R72
+R73
 l0
 L54
 V@3C5VzCW?SE:Y0=]T6g1Q2
 !s100 >KAfo0jT@;E6FALALXAne0
 R6
 32
-R7
+Z76 !s110 1586746882
 !i10b 1
-R8
-R73
+Z77 !s108 1586746882.000000
 R74
+R75
 !i113 1
 R11
 R12
 Artl
 R1
 R2
-R75
+DEx4 work 12 sra_mux4bit2 0 22 @3C5VzCW?SE:Y0=]T6g1Q2
 l64
 L63
 VG@7Hdiel0;FU3IYT9NXD10
 !s100 27j]CUMk:db6_V1DO>ZEW2
 R6
 32
-R7
+R76
 !i10b 1
-R8
-R73
+R77
 R74
+R75
 !i113 1
 R11
 R12
@@ -720,37 +718,37 @@ R68
 R1
 R2
 R3
-R71
 R72
+R73
 l0
 L8
 VIZGagMOQ5Z]bNcc<A>5Jf2
 !s100 1Id?_ceP911B61lSMZT:E1
 R6
 32
-R7
+R76
 !i10b 1
-R8
-R73
+R77
 R74
+R75
 !i113 1
 R11
 R12
 Artl
 R1
 R2
-R77
+DEx4 work 13 sra_mux4bit32 0 22 IZGagMOQ5Z]bNcc<A>5Jf2
 l18
 L17
 V5H7k?hdjmBMB^A>cAAV7=1
 !s100 kR2O;hFaJFG_[LFU4Aooe3
 R6
 32
-R7
+R76
 !i10b 1
-R8
-R73
+R77
 R74
+R75
 !i113 1
 R11
 R12
@@ -759,83 +757,81 @@ R68
 R1
 R2
 R3
-R71
 R72
+R73
 l0
 L31
 VBSn3CYQ]76aYi?@5eCad^3
 !s100 @bzY^?5^HE>^86;3?JW7[1
 R6
 32
-R7
+R76
 !i10b 1
-R8
-R73
+R77
 R74
+R75
 !i113 1
 R11
 R12
 Artl
 R1
 R2
-R76
+DEx4 work 12 sra_mux4bit8 0 22 BSn3CYQ]76aYi?@5eCad^3
 l41
 L40
 VIRgUCCS=PE^RdNGF>YC;Y0
 !s100 n<bPVb=^N2NAX6YkIYZP?3
 R6
 32
-R7
+R76
 !i10b 1
-R8
-R73
+R77
 R74
+R75
 !i113 1
 R11
 R12
 Esrl64
-R68
+Z78 w1586747673
 R38
 R26
 R1
 R2
 R3
-Z78 8C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd
-Z79 FC:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd
+Z79 8C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd
+Z80 FC:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd
 l0
-L83
-VcnXQR=P_]KTVREbUd5eEi1
-!s100 R5I5YDz7VYUND<h1IgBD>0
+L10
+VDX]THNFkKNF^`cU5C1S4z3
+!s100 5UV6CbFELN_lTD=Bg1nJz1
 R6
 32
 R18
 !i10b 1
-R8
-Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd|
-Z81 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd|
+R19
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd|
+Z82 !s107 C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd|
 !i113 1
 R11
 R12
 Artl
-Z82 DEx4 work 12 srl_mux4bit2 0 22 WB5]KOoU8=^KYUAKSnj>R0
-Z83 DEx4 work 12 srl_mux4bit8 0 22 D@K<G>k?e_LQ:55eEPFEY3
-Z84 DEx4 work 13 srl_mux4bit32 0 22 LoA2N5I:oJmd[_F2aLYoo0
+R47
 R38
 R26
 R1
 R2
 R65
-l95
-L92
-VMMBH<J6lEEdJ61<4fGnk22
-!s100 ]6[Zb_fj43W>M9a]?Z^fl0
+l41
+L19
+V9QZ8maW:]QII7P6Y=4QJQ3
+!s100 IJIZGPWe_C5CchJR3gGib3
 R6
 32
 R18
 !i10b 1
-R8
-R80
+R19
 R81
+R82
 !i113 1
 R11
 R12
@@ -844,37 +840,37 @@ R68
 R1
 R2
 R3
-R78
 R79
+R80
 l0
 L54
 VWB5]KOoU8=^KYUAKSnj>R0
 !s100 @WbU@L_9AhLX]I[9bL[K<3
 R6
 32
-R18
+Z83 !s110 1586747493
 !i10b 1
-R8
-R80
+Z84 !s108 1586747493.000000
 R81
+R82
 !i113 1
 R11
 R12
 Artl
 R1
 R2
-R82
+DEx4 work 12 srl_mux4bit2 0 22 WB5]KOoU8=^KYUAKSnj>R0
 l64
 L63
 VKkR1;_ZeL=BPohjS?fR>[2
 !s100 `ME153B8OJ01EaMCgOIHY3
 R6
 32
-R18
+R83
 !i10b 1
-R8
-R80
+R84
 R81
+R82
 !i113 1
 R11
 R12
@@ -883,37 +879,37 @@ R68
 R1
 R2
 R3
-R78
 R79
+R80
 l0
 L8
 VLoA2N5I:oJmd[_F2aLYoo0
 !s100 oS>6C[RNf=@X231gIbEo_0
 R6
 32
-R18
+R83
 !i10b 1
-R8
-R80
+R84
 R81
+R82
 !i113 1
 R11
 R12
 Artl
 R1
 R2
-R84
+DEx4 work 13 srl_mux4bit32 0 22 LoA2N5I:oJmd[_F2aLYoo0
 l18
 L17
 VDbEL=`A29CJ]3O_:Y8h5l3
 !s100 SZliD8oTILeb`4:z`8N`k0
 R6
 32
-R18
+R83
 !i10b 1
-R8
-R80
+R84
 R81
+R82
 !i113 1
 R11
 R12
@@ -922,37 +918,37 @@ R68
 R1
 R2
 R3
-R78
 R79
+R80
 l0
 L31
 VD@K<G>k?e_LQ:55eEPFEY3
 !s100 f31DS84VYh3m^K64@l7gJ0
 R6
 32
-R18
+R83
 !i10b 1
-R8
-R80
+R84
 R81
+R82
 !i113 1
 R11
 R12
 Artl
 R1
 R2
-R83
+DEx4 work 12 srl_mux4bit8 0 22 D@K<G>k?e_LQ:55eEPFEY3
 l41
 L40
 V[Zm[BdP6L?387XLb[4eS82
 !s100 ^NLBI7IGZ_oiQgR^DfjI=3
 R6
 32
-R18
+R83
 !i10b 1
-R8
-R80
+R84
 R81
+R82
 !i113 1
 R11
 R12
