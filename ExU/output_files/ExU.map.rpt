@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ExU
-Sun Apr 12 18:14:28 2020
+Sun Apr 12 20:01:38 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,23 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Parameter Settings for User Entity Instance: Top-level Entity: |ShiftUnit
+  6. Parameter Settings for User Entity Instance: SLL64:SLL64_A
+  7. Parameter Settings for User Entity Instance: SLL64:SLL64_A|MUX4bit:Mux32
+  8. Parameter Settings for User Entity Instance: SLL64:SLL64_A|MUX4bit:Mux8
+  9. Parameter Settings for User Entity Instance: SLL64:SLL64_A|MUX4bit:Mux4
+ 10. Parameter Settings for User Entity Instance: SRL64:SRL64_A
+ 11. Parameter Settings for User Entity Instance: SRL64:SRL64_A|SRL_MUX4bit32:Mux1
+ 12. Parameter Settings for User Entity Instance: SRL64:SRL64_A|SRL_MUX4bit8:Mux2
+ 13. Parameter Settings for User Entity Instance: SRL64:SRL64_A|SRL_MUX4bit2:Mux3
+ 14. Parameter Settings for User Entity Instance: SRA64:SRA64_A
+ 15. Parameter Settings for User Entity Instance: SRA64:SRA64_A|SRA_MUX4bit32:Mux1
+ 16. Parameter Settings for User Entity Instance: SRA64:SRA64_A|SRA_MUX4bit8:Mux2
+ 17. Parameter Settings for User Entity Instance: SRA64:SRA64_A|SRA_MUX4bit2:Mux3
+ 18. Port Connectivity Checks: "SLL64:SLL64_A|MUX4bit:Mux4"
+ 19. Port Connectivity Checks: "SLL64:SLL64_A|MUX4bit:Mux8"
+ 20. Port Connectivity Checks: "SLL64:SLL64_A|MUX4bit:Mux32"
+ 21. Analysis & Synthesis Messages
 
 
 
@@ -36,10 +52,10 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Apr 12 18:14:28 2020           ;
+; Analysis & Synthesis Status        ; Failed - Sun Apr 12 20:01:38 2020           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ExU                                         ;
-; Top-level Entity Name              ; ExU                                         ;
+; Top-level Entity Name              ; ShiftUnit                                   ;
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; N/A until Partition Merge                   ;
 ;     Total combinational functions  ; N/A until Partition Merge                   ;
@@ -59,7 +75,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; ExU                ; ExU                ;
+; Top-level entity name                                            ; ShiftUnit          ; ExU                ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -155,13 +171,176 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |ShiftUnit ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 64    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SLL64:SLL64_A ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; n              ; 64    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SLL64:SLL64_A|MUX4bit:Mux32 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; n              ; 64    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SLL64:SLL64_A|MUX4bit:Mux8 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; n              ; 64    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SLL64:SLL64_A|MUX4bit:Mux4 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; n              ; 64    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SRL64:SRL64_A ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; n              ; 64    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SRL64:SRL64_A|SRL_MUX4bit32:Mux1 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; n              ; 64    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SRL64:SRL64_A|SRL_MUX4bit8:Mux2 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 64    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SRL64:SRL64_A|SRL_MUX4bit2:Mux3 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 64    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SRA64:SRA64_A ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; n              ; 64    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SRA64:SRA64_A|SRA_MUX4bit32:Mux1 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; n              ; 64    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SRA64:SRA64_A|SRA_MUX4bit8:Mux2 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 64    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SRA64:SRA64_A|SRA_MUX4bit2:Mux3 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 64    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "SLL64:SLL64_A|MUX4bit:Mux4" ;
++---------+-------+----------+---------------------------+
+; Port    ; Type  ; Severity ; Details                   ;
++---------+-------+----------+---------------------------+
+; b[0]    ; Input ; Info     ; Stuck at GND              ;
+; c[1..0] ; Input ; Info     ; Stuck at GND              ;
+; d[2..0] ; Input ; Info     ; Stuck at GND              ;
++---------+-------+----------+---------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "SLL64:SLL64_A|MUX4bit:Mux8" ;
++----------+-------+----------+--------------------------+
+; Port     ; Type  ; Severity ; Details                  ;
++----------+-------+----------+--------------------------+
+; b[3..0]  ; Input ; Info     ; Stuck at GND             ;
+; c[7..0]  ; Input ; Info     ; Stuck at GND             ;
+; d[11..0] ; Input ; Info     ; Stuck at GND             ;
++----------+-------+----------+--------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "SLL64:SLL64_A|MUX4bit:Mux32" ;
++----------+-------+----------+---------------------------+
+; Port     ; Type  ; Severity ; Details                   ;
++----------+-------+----------+---------------------------+
+; b[15..0] ; Input ; Info     ; Stuck at GND              ;
+; c[31..0] ; Input ; Info     ; Stuck at GND              ;
+; d[47..0] ; Input ; Info     ; Stuck at GND              ;
++----------+-------+----------+---------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Apr 12 18:13:58 2020
+    Info: Processing started: Sun Apr 12 20:01:26 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ExU -c ExU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -183,18 +362,12 @@ Info (12021): Found 8 design units, including 4 entities, in source file sourcec
     Info (12023): Found entity 2: SRA_MUX4bit8 File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 31
     Info (12023): Found entity 3: SRA_MUX4bit2 File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 54
     Info (12023): Found entity 4: SRA64 File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 83
-Info (12021): Found 8 design units, including 4 entities, in source file sourcecode/sll64.vhd
-    Info (12022): Found design unit 1: SLL_MUX4bit32-rtl File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd Line: 17
-    Info (12022): Found design unit 2: SLL_MUX4bit8-rtl File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd Line: 40
-    Info (12022): Found design unit 3: SLL_MUX4bit2-rtl File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd Line: 63
-    Info (12022): Found design unit 4: SLL64-rtl File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd Line: 92
-    Info (12023): Found entity 1: SLL_MUX4bit32 File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd Line: 8
-    Info (12023): Found entity 2: SLL_MUX4bit8 File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd Line: 31
-    Info (12023): Found entity 3: SLL_MUX4bit2 File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd Line: 54
-    Info (12023): Found entity 4: SLL64 File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd Line: 83
+Info (12021): Found 2 design units, including 1 entities, in source file sourcecode/sll64.vhd
+    Info (12022): Found design unit 1: SLL64-rtl File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd Line: 19
+    Info (12023): Found entity 1: SLL64 File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file sourcecode/shiftunit.vhd
-    Info (12022): Found design unit 1: ShiftUnit-rtl File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ShiftUnit.vhd Line: 21
-    Info (12023): Found entity 1: ShiftUnit File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ShiftUnit.vhd Line: 11
+    Info (12022): Found design unit 1: ShiftUnit-rtl File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ShiftUnit.vhd Line: 20
+    Info (12023): Found entity 1: ShiftUnit File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ShiftUnit.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file sourcecode/logicunit.vhd
     Info (12022): Found design unit 1: LogicUnit-rtl File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicUnit.vhd Line: 20
     Info (12023): Found entity 1: LogicUnit File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicUnit.vhd Line: 10
@@ -202,11 +375,11 @@ Info (12021): Found 8 design units, including 4 entities, in source file sourcec
     Info (12022): Found design unit 1: AndGate-rtl File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicGates.vhd Line: 17
     Info (12022): Found design unit 2: OrGate-rtl File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicGates.vhd Line: 40
     Info (12022): Found design unit 3: XorGate-rtl File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicGates.vhd Line: 63
-    Info (12022): Found design unit 4: MUX4bit-rtl File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicGates.vhd Line: 88
+    Info (12022): Found design unit 4: MUX4bit-rtl File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicGates.vhd Line: 92
     Info (12023): Found entity 1: AndGate File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicGates.vhd Line: 9
     Info (12023): Found entity 2: OrGate File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicGates.vhd Line: 32
     Info (12023): Found entity 3: XorGate File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicGates.vhd Line: 55
-    Info (12023): Found entity 4: MUX4bit File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicGates.vhd Line: 79
+    Info (12023): Found entity 4: MUX4bit File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/LogicGates.vhd Line: 80
 Info (12021): Found 2 design units, including 1 entities, in source file sourcecode/execunit.vhd
     Info (12022): Found design unit 1: ExecUnit-rtl File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ExecUnit.vhd Line: 23
     Info (12023): Found entity 1: ExecUnit File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ExecUnit.vhd Line: 9
@@ -216,13 +389,531 @@ Info (12021): Found 2 design units, including 1 entities, in source file sourcec
 Info (12021): Found 2 design units, including 1 entities, in source file sourcecode/adder.vhd
     Info (12022): Found design unit 1: Adder-rtl File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/Adder.vhd Line: 19
     Info (12023): Found entity 1: Adder File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/Adder.vhd Line: 8
-Error (10621): VHDL Use Clause error at ShiftUnit.vhd(24): more than one Use Clause imports a declaration of simple name "unsigned" -- none of the declarations are directly visible File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ShiftUnit.vhd Line: 24
-Error (10784): HDL error at numeric_std_vhdl1993.vhd(65): see declaration for object "unsigned" File: c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/1993/numeric_std_vhdl1993.vhd Line: 65
-Error (10609): VHDL error at syn_arit.vhd(26): another match for "unsigned" File: c:/intelfpga_lite/18.1/quartus/libraries/vhdl/synopsys/ieee/syn_arit.vhd Line: 26
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 1 warning
-    Error: Peak virtual memory: 4796 megabytes
-    Error: Processing ended: Sun Apr 12 18:14:28 2020
-    Error: Elapsed time: 00:00:30
-    Error: Total CPU time (on all processors): 00:00:23
+Info (12127): Elaborating entity "ShiftUnit" for the top level hierarchy
+Warning (10445): VHDL Subtype or Type Declaration warning at ShiftUnit.vhd(45): subtype or type has null range File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ShiftUnit.vhd Line: 45
+Warning (10873): Using initial value X (don't care) for net "swappedA[31..0]" at ShiftUnit.vhd(22) File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ShiftUnit.vhd Line: 22
+Info (12128): Elaborating entity "SLL64" for hierarchy "SLL64:SLL64_A" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ShiftUnit.vhd Line: 57
+Info (12128): Elaborating entity "MUX4bit" for hierarchy "SLL64:SLL64_A|MUX4bit:Mux32" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SLL64.vhd Line: 64
+Info (12128): Elaborating entity "SRL64" for hierarchy "SRL64:SRL64_A" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ShiftUnit.vhd Line: 58
+Info (12128): Elaborating entity "SRL_MUX4bit32" for hierarchy "SRL64:SRL64_A|SRL_MUX4bit32:Mux1" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 96
+Info (12128): Elaborating entity "SRL_MUX4bit8" for hierarchy "SRL64:SRL64_A|SRL_MUX4bit8:Mux2" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 97
+Info (12128): Elaborating entity "SRL_MUX4bit2" for hierarchy "SRL64:SRL64_A|SRL_MUX4bit2:Mux3" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 98
+Info (12128): Elaborating entity "SRA64" for hierarchy "SRA64:SRA64_A" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/ShiftUnit.vhd Line: 59
+Info (12128): Elaborating entity "SRA_MUX4bit32" for hierarchy "SRA64:SRA64_A|SRA_MUX4bit32:Mux1" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 96
+Info (12128): Elaborating entity "SRA_MUX4bit8" for hierarchy "SRA64:SRA64_A|SRA_MUX4bit8:Mux2" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 97
+Info (12128): Elaborating entity "SRA_MUX4bit2" for hierarchy "SRA64:SRA64_A|SRA_MUX4bit2:Mux3" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 98
+Error (12014): Net "SRA64:SRA64_A|tempY[62]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[62]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[62]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[62]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[62]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[61]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[61]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[61]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[61]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[61]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[60]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[60]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[60]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[60]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[60]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[59]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[59]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[59]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[59]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[59]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[58]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[58]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[58]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[58]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[58]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[57]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[57]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[57]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[57]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[57]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[56]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[56]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[56]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[56]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[56]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[55]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[55]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[55]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[55]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[55]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[54]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[54]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[54]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[54]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[54]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[53]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[53]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[53]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[53]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[53]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[52]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[52]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[52]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[52]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[52]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[51]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[51]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[51]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[51]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[51]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[50]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[50]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[50]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[50]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[50]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[49]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[49]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[49]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[49]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[49]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[48]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[48]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[48]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[48]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[48]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[47]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[47]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[47]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[47]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[47]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[46]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[46]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[46]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[46]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[46]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[45]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[45]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[45]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[45]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[45]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[44]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[44]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[44]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[44]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[44]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[43]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[43]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[43]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[43]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[43]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[42]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[42]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[42]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[42]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[42]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[41]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[41]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[41]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[41]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[41]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[40]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[40]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[40]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[40]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[40]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[39]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[39]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[39]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[39]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[39]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[38]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[38]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[38]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[38]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[38]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[37]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[37]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[37]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[37]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[37]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[36]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[36]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[36]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[36]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[36]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[35]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[35]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[35]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[35]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[35]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[34]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[34]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[34]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[34]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[34]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[33]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[33]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[33]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[33]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[33]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[32]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[32]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[32]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[32]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[32]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[31]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[31]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[31]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[31]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[31]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[30]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[30]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[30]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[30]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[30]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[29]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[29]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[29]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[29]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[29]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[28]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[28]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[28]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[28]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[28]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[27]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[27]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[27]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[27]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[27]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[26]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[26]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[26]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[26]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[26]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[25]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[25]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[25]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[25]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[25]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[24]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[24]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[24]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[24]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[24]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[23]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[23]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[23]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[23]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[23]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[22]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[22]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[22]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[22]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[22]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[21]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[21]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[21]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[21]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[21]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[20]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[20]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[20]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[20]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[20]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[19]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[19]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[19]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[19]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[19]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[18]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[18]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[18]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[18]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[18]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[17]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[17]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[17]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[17]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[17]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[16]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[16]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[16]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[16]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[16]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[15]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[15]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[15]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[15]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[15]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[14]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[14]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[14]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[14]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[14]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[13]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[13]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[13]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[13]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[13]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[12]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[12]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[12]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[12]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[12]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[11]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[11]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[11]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[11]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[11]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[10]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[10]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[10]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[10]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[10]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[9]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[9]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[9]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[9]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[9]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[8]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[8]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[8]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[8]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[8]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[7]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[7]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[7]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[7]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[7]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[6]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[6]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[6]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[6]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[6]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[5]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[5]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[5]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[5]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[5]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[4]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[4]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[4]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[4]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[4]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[3]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[3]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[3]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[3]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[3]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[2]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[2]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[2]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[2]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[2]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[1]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[1]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[1]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[1]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[1]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRA64:SRA64_A|tempY[0]", which fans out to "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|X[0]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 94
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit32:Mux1|Y[0]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 14
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit8:Mux2|Y[0]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 37
+    Error (12015): Net is fed by "SRA64:SRA64_A|SRA_MUX4bit2:Mux3|Y[0]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRA64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[63]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[63]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[63]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[63]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[63]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[62]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[62]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[62]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[62]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[62]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[61]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[61]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[61]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[61]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[61]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[60]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[60]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[60]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[60]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[60]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[59]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[59]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[59]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[59]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[59]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[58]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[58]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[58]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[58]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[58]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[57]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[57]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[57]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[57]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[57]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[56]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[56]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[56]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[56]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[56]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[55]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[55]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[55]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[55]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[55]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[54]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[54]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[54]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[54]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[54]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[53]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[53]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[53]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[53]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[53]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[52]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[52]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[52]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[52]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[52]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[51]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[51]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[51]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[51]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[51]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[50]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[50]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[50]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[50]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[50]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[49]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[49]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[49]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[49]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[49]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[48]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[48]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[48]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[48]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[48]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[47]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[47]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[47]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[47]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[47]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[46]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[46]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[46]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[46]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[46]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[45]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[45]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[45]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[45]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[45]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[44]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[44]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[44]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[44]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[44]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[43]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[43]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[43]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[43]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[43]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[42]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[42]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[42]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[42]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[42]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[41]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[41]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[41]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[41]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[41]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[40]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[40]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[40]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[40]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[40]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[39]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[39]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[39]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[39]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[39]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[38]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[38]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[38]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[38]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[38]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[37]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[37]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[37]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[37]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[37]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[36]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[36]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[36]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[36]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[36]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[35]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[35]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[35]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[35]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[35]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[34]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[34]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[34]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[34]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[34]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[33]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[33]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[33]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[33]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[33]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[32]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[32]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[32]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[32]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[32]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[31]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[31]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[31]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[31]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[31]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[30]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[30]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[30]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[30]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[30]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[29]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[29]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[29]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[29]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[29]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[28]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[28]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[28]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[28]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[28]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[27]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[27]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[27]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[27]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[27]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[26]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[26]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[26]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[26]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[26]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[25]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[25]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[25]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[25]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[25]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[24]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[24]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[24]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[24]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[24]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[23]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[23]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[23]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[23]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[23]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[22]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[22]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[22]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[22]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[22]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[21]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[21]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[21]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[21]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[21]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[20]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[20]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[20]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[20]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[20]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[19]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[19]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[19]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[19]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[19]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[18]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[18]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[18]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[18]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[18]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[17]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[17]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[17]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[17]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[17]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[16]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[16]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[16]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[16]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[16]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[15]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[15]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[15]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[15]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[15]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[14]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[14]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[14]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[14]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[14]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[13]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[13]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[13]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[13]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[13]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[12]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[12]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[12]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[12]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[12]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[11]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[11]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[11]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[11]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[11]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[10]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[10]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[10]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[10]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[10]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[9]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[9]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[9]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[9]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[9]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[8]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[8]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[8]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[8]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[8]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[7]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[7]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[7]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[7]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[7]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[6]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[6]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[6]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[6]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[6]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[5]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[5]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[5]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[5]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[5]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[4]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[4]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[4]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[4]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[4]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[3]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[3]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[3]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[3]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[3]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[2]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[2]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[2]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[2]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[2]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[1]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[1]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[1]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[1]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[1]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error (12014): Net "SRL64:SRL64_A|tempY[0]", which fans out to "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|X[0]", cannot be assigned more than one value File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 94
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit32:Mux1|Y[0]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 14
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit8:Mux2|Y[0]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 37
+    Error (12015): Net is fed by "SRL64:SRL64_A|SRL_MUX4bit2:Mux3|Y[0]" File: C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/SourceCode/SRL64.vhd Line: 60
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 508 errors, 3 warnings
+    Error: Peak virtual memory: 4810 megabytes
+    Error: Processing ended: Sun Apr 12 20:01:38 2020
+    Error: Elapsed time: 00:00:12
+    Error: Total CPU time (on all processors): 00:00:24
 
 

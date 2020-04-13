@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Failed - Sun Apr 12 18:14:28 2020
+Analysis & Synthesis Status : Failed - Sun Apr 12 20:01:38 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ExU
-Top-level Entity Name : ExU
+Top-level Entity Name : ShiftUnit
 Family : Cyclone IV E
 Total logic elements : N/A until Partition Merge
     Total combinational functions : N/A until Partition Merge

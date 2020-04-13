@@ -75,12 +75,16 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.math_real.all;
 use ieee.numeric_std.all;
+use ieee.numeric_std.all;
 
 Entity MUX4bit is
   Generic ( N : natural := 64);
   Port(
-    A, B, C, D  : in std_logic_vector( N-1 downto 0 );
-    selectBit   : in unsigned(1 downto 0);
+    A           : in std_logic_vector( N-1 downto 0 );
+    B           : in std_logic_vector( N-1 downto 0 );
+    C           : in std_logic_vector( N-1 downto 0 );
+    D           : in std_logic_vector( N-1 downto 0 );
+    selectBit   : in std_logic_vector(1 downto 0);
 
     Y           : out std_logic_vector( N-1 downto 0 ));
 End Entity MUX4bit;
