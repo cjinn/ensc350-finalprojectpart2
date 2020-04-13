@@ -19,6 +19,7 @@ End Entity ShiftUnit;
 
 Architecture rtl of ShiftUnit is
   -- Signals for potential inputs to Shift Barrels
+  signal swappedA       : std_logic_vector(N-1 downto 0);
   signal tempA          : std_logic_vector(N-1 downto 0);
   signal shiftCount     : unsigned(integer(ceil(log2(real(N)))) - 1 downto 0);
 
@@ -39,11 +40,17 @@ begin
   -- Extract ShiftCount from B
   shiftCount <= unsigned(B(integer(ceil(log2(real(N)))) - 1 downto 0)); -- lower 6 bits of the register for 64-bit operations
 
+  -- Swapping lower 32 bits to upper
+  swappedA(N - 1 downto N/2) <= A(N/2 - 1 downto 0);
+  SwapWordLoop: for index in (N/2 - 1) to 0 generate
+    swappedA(index) <= '0';
+  end generate SwapWordLoop;
+
   -- Mux for A
   with ShiftFN(1) and ExtWord select
     tempA <=
       A when '0',
-      A when '1', -- SwapWord: To-do
+      swappedA when '1',
       (others => 'X') when others;
 
   -- Pass in tempA into all three barrel shifters
@@ -65,25 +72,26 @@ begin
       shiftedLL_A when '1',
       (others => 'X') when others;
 
-  -- SgnExt Upper Mux
+  -- Sign Extension on shiftedRightA
   upperShiftedA(N/2 - 1 downto 0) <= shiftedRightA(N/2 - 1 downto 0);
   sgnext_upper: for i in N-1 downto N/2 generate
     upperShiftedA(i) <= shiftedRightA(N/2 - 1);
   end generate sgnext_upper;
-    
+  
+  -- SgnExt Upper Mux
   with ExtWord select
     extendedA <=
     shiftedRightA when '0',
     upperShiftedA when '1',
     (others => 'X') when others;
 
-  -- SgnExt Lower Mux
+  -- Sign Extension on AC
   lowerShiftedA(N/2 - 1 downto 0) <= AC(N/2 - 1 downto 0);
   sgnext_lower: for i in N-1 downto N/2 generate
     lowerShiftedA(i) <= AC(N/2 - 1);
   end generate sgnext_lower;
-	
 
+  -- SgnExt Lower Mux
   with ExtWord select
     extendedAC <=
       AC when '0',
