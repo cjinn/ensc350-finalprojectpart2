@@ -4,7 +4,6 @@
 
 library ieee;
 Use ieee.std_logic_1164.all;
-Use ieee.std_logic_arith.all;
 Use ieee.math_real.all;
 Use ieee.numeric_std.all;
 
@@ -38,8 +37,7 @@ Architecture rtl of ShiftUnit is
   signal extendedAC     : std_logic_vector(N-1 downto 0);
 begin
   -- Extract ShiftCount from B
-  shiftCount <= to_unsigned(
-    B(integer(ceil(log2(real(N)))) - 1 downto 0), integer(ceil(log2(real(N))))); -- lower 6 bits of the register for 64-bit operations
+  shiftCount <= unsigned(B(integer(ceil(log2(real(N)))) - 1 downto 0)); -- lower 6 bits of the register for 64-bit operations
 
   -- Mux for A
   with ShiftFN(1) and ExtWord select
@@ -69,8 +67,10 @@ begin
 
   -- SgnExt Upper Mux
   upperShiftedA(N/2 - 1 downto 0) <= shiftedRightA(N/2 - 1 downto 0);
-  upperShiftedA(N - 1 downto N/2) <= shiftedRightA(N/2 - 1);
-  
+  sgnext_upper: for i in N-1 downto N/2 generate
+    upperShiftedA(i) <= shiftedRightA(N/2 - 1);
+  end generate sgnext_upper;
+    
   with ExtWord select
     extendedA <=
     shiftedRightA when '0',
@@ -79,7 +79,10 @@ begin
 
   -- SgnExt Lower Mux
   lowerShiftedA(N/2 - 1 downto 0) <= AC(N/2 - 1 downto 0);
-  lowerShiftedA(N - 1 downto N/2) <= AC(N/2 - 1);
+  sgnext_lower: for i in N-1 downto N/2 generate
+    lowerShiftedA(i) <= AC(N/2 - 1);
+  end generate sgnext_lower;
+	
 
   with ExtWord select
     extendedAC <=
