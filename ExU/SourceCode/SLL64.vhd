@@ -38,20 +38,9 @@ Architecture rtl of SLL64 is
   signal l  : std_logic_vector(1 downto 0);
   signal m  : std_logic_vector(1 downto 0);
   signal o  : std_logic_vector(1 downto 0);
+  
+  
 begin
-  tempX <= X;
-  a <= tempX(47 downto 0)&(15 downto 0 => '0');
-  b <= tempX(31 downto 0)&(31 downto 0 => '0');
-  c <= tempX(15 downto 0)&(47 downto 0 => '0');
-
-  d <= tempX(59 downto 0)&(3 downto 0 => '0');
-  e <= tempX(55 downto 0)&(7 downto 0 => '0');
-  f <= tempX(51 downto 0)&(11 downto 0 => '0');
-
-  g <= tempX(62 downto 0)&(0 => '0');
-  h <= tempX(61 downto 0)&(1 downto 0 => '0');
-  i <= tempX(60 downto 0)&(2 downto 0 => '0');
-
   l(1) <= ShiftCount(5);
   l(0) <= ShiftCount(4);
 
@@ -61,14 +50,25 @@ begin
   o(1) <= ShiftCount(1);
   o(0) <= ShiftCount(0);
 
-  Mux32: entity work.MUX4bit generic map(N) port map(
-    tempX, a, b, c, l, j);
+  tempX <= X;
+  a <= tempX(47 downto 0)&(15 downto 0 => '0');
+  b <= tempX(31 downto 0)&(31 downto 0 => '0');
+  c <= tempX(15 downto 0)&(47 downto 0 => '0');
+
+  Mux32: entity work.MUX4bit generic map(N) port map(tempX, a, b, c, l, j);
   
-  Mux8: entity work.MUX4bit generic map(N) port map(
-    j, d, e, f, m, k);
+  d <= j(59 downto 0)&(3 downto 0 => '0');
+  e <= j(55 downto 0)&(7 downto 0 => '0');
+  f <= j(51 downto 0)&(11 downto 0 => '0');
   
-  Mux4: entity work.MUX4bit generic map(N) port map(
-    k, g, h, i, o, tempY);
+  Mux8: entity work.MUX4bit generic map(N) port map(j, d, e, f, m, k);
+  
+  g <= k(62 downto 0)&(0 => '0');
+  h <= k(61 downto 0)&(1 downto 0 => '0');
+  i <= k(60 downto 0)&(2 downto 0 => '0');
+
+  
+  Mux4: entity work.MUX4bit generic map(N) port map(k, g, h, i, o, tempY);
 
   Y <= tempY;
 End Architecture rtl;
