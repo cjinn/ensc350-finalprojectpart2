@@ -37,7 +37,9 @@ begin
 		   Not B when (AddnSub = '1');
 	   
   ArithAdder:  entity work.Adder(rtl) generic map (N)
-    port map (Sig_A, Sig_B, AddY, AddnSub, coutSignal, overflow);
+    port map (Sig_A, Sig_B, AdderOutput, AddnSub, coutSignal, overflow);
+	
+  AddY <= AdderOutput;
     
   -- Sign Extension
 	signExt: for i in 0 to 31 generate
