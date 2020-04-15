@@ -53,8 +53,8 @@ begin
   -- Pick which results from which unit with a mux
   with FuncClass select
     Y <=
-      (AltBuSignal, others => '0') when "00",
-      (AltBSignal, others => '0') when "01",
+      ((N-1 downto 1 => '0')&AltBuSignal) when "00",
+      ((N-1 downto 1 => '0')&AltBSignal) when "01",
       ShiftResult when "10",
       LogicResult when "11",
       (others => 'X') when others;

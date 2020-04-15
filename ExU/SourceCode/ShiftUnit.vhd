@@ -45,11 +45,10 @@ Architecture rtl of ShiftUnit is
 begin
   -- Extract ShiftCount from B
   shiftCount <= unsigned(B(integer(ceil(log2(real(N)))) - 1 downto 0)); -- lower 6 bits of the register for 64-bit operations
-  with ShiftCount(5) select
-    bitshift <=
-    '0' when '0',
-    '1' when '1',
-    'X' when others;
+
+    bitshift <= '0' when (ShiftCount(5)= '0' or ShiftFN = "00")
+    else '1' when (ShiftCount(5)='1' and ShiftFN /= "00")
+    else 'X';
 
   -- Swapping lower 32 bits to upper
   swappedA(N - 1 downto N/2) <= A(N/2 - 1 downto 0);
