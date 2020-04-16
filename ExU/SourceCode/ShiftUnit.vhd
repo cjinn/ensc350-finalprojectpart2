@@ -54,7 +54,7 @@ Architecture rtl of ShiftUnit is
   -- Flag Signals
   signal bitShift       : std_logic; --If '1', a bitshift is required during sign extension
 begin
-  -- Extract ShiftCount from B
+  -- Extract ShiftCount from B. Shifts the number based on the lower 6 bits
   shiftCount <= unsigned(B(integer(ceil(log2(real(N)))) - 1 downto 0)); -- lower 6 bits of the register for 64-bit operations
 
   -- Sets the flag if bitshift is required during Sign Extension

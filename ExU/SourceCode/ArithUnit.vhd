@@ -26,8 +26,8 @@ Entity ArithUnit is
     Cout    : out std_logic;                      -- Carry bit
     Ovfl    : out std_logic;                      -- Overflow bit
     Zero    : out std_logic;                      -- If '1', result Y is zero (NULL)
-    AltB    : out std_logic;                      --
-    AltBu   : out std_logic);                     --
+    AltB    : out std_logic;                      -- TODO:
+    AltBu   : out std_logic);                     -- TODO:
 End Entity ArithUnit;
 
 Architecture rtl of ArithUnit is
