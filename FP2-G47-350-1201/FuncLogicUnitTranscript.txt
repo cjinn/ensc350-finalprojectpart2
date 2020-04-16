@@ -1,0 +1,93 @@
+# transcript on
+#----------------------------------------------------------------------------------------------------------
+# compile
+#----------------------------------------------------------------------------------------------------------
+# vcom -work work -2008 -explicit -stats=none ../SourceCode/LogicUnit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SRA64
+# -- Compiling architecture rtl of SRA64
+# -- Loading entity MUX4bit
+# ** Warning: ../SourceCode/SRA64.vhd(68): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+# ** Warning: ../SourceCode/SRA64.vhd(69): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+# ** Warning: ../SourceCode/SRA64.vhd(70): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+# ** Warning: ../SourceCode/SRA64.vhd(76): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+# ** Warning: ../SourceCode/SRA64.vhd(77): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+# ** Warning: ../SourceCode/SRA64.vhd(78): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# ** Warning: ../SourceCode/SRA64.vhd(85): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+# ** Warning: ../SourceCode/SRA64.vhd(86): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+# ** Warning: (vcom-6) -- Waiting for lock by "Jin-Desktop@JIN-DESKTOP, pid = 12452
+# ". Lockfile is "C:/Users/Jin-Desktop/Documents/Projects/ensc350-finalprojectpart2/ExU/Simulation/work/_lock".
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Compiling entity LogicUnit
+# -- Compiling architecture rtl of LogicUnit
+# -- Loading entity AndGate
+# -- Loading entity OrGate
+# -- Loading entity XorGate
+# -- Loading package MATH_REAL
+# -- Loading entity MUX4bit
+# 
+# vcom -work work -2008 -explicit -stats=none TBLogicUnit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity TbLogicUnit
+# -- Compiling architecture behavioural of TbLogicUnit
+# 
+# vcom -work work -2008 -explicit -stats=time,-cmd,msg ConfigExU.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:01:41 on Apr 16,2020
+# -- Loading package STANDARD
+# -- Compiling configuration FuncLUSim
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity TbLogicUnit
+# -- Loading architecture behavioural of TbLogicUnit
+# -- Loading package std_logic_arith
+# -- Loading entity LogicUnit
+# -- Compiling configuration TimeLUSim
+# -- Loading entity TbLogicUnit
+# -- Loading architecture behavioural of TbLogicUnit
+# -- Loading entity LogicUnit
+# -- Compiling configuration FuncAUSim
+# -- Loading entity TbArithUnit
+# -- Loading architecture behavioural of TbArithUnit
+# -- Loading entity ArithUnit
+# -- Compiling configuration TimeAUSim
+# -- Loading entity TbArithUnit
+# -- Loading architecture behavioural of TbArithUnit
+# -- Loading entity ArithUnit
+# -- Compiling configuration FuncSUSim
+# -- Loading entity TbShiftUnit
+# -- Loading architecture behavioural of TbShiftUnit
+# -- Loading package MATH_REAL
+# -- Loading entity ShiftUnit
+# -- Compiling configuration TimeSUSim
+# -- Loading entity TbShiftUnit
+# -- Loading architecture behavioural of TbShiftUnit
+# -- Loading entity ShiftUnit
+# -- Compiling configuration FuncXUSim
+# -- Loading entity TbExecUnit
+# ** Error: (vcom-13) Recompile work.tbexecunit(behavioural) because work.tbexecunit has changed.
+# ** Error: ConfigExU.vhd(46): (vcom-1537) Block specification "behavioural" is not an architecture name.
+# ** Error: ConfigExU.vhd(47): VHDL Compiler exiting
+# End time: 07:01:41 on Apr 16,2020, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro C:\Users\Jin-Desktop\Documents\Projects\ensc350-finalprojectpart2\ExU\Simulation\FunctionalLogicUnit.do line 11
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit -stats=time,-cmd,msg ConfigExU.vhd"
+# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
