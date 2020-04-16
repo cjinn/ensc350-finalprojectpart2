@@ -1,7 +1,12 @@
 -----------------------------------------------------------------------------
--- ShiftUnit
+-- ShiftUnit.vhd
+-- VHDL code of a 64-bit Shift Unit
+-- Compatabile for 32-bit operations
 -----------------------------------------------------------------------------
 
+-----------------------------------------------------------------------------
+-- ShiftUnit Declaration
+-----------------------------------------------------------------------------
 library ieee;
 Use ieee.std_logic_1164.all;
 Use ieee.math_real.all;
@@ -10,18 +15,23 @@ Use ieee.numeric_std.all;
 Entity ShiftUnit is
   Generic ( N : natural := 64 );
   Port (
-    A, B, C : in std_logic_vector( N-1 downto 0 );
-    ShiftFN : in std_logic_vector( 1 downto 0 );
-    ExtWord : in std_logic;
+    -- Input Signals
+    A, B, C : in std_logic_vector( N-1 downto 0 );    -- 64-bit number input signals
+    ShiftFN : in std_logic_vector( 1 downto 0 );      -- Selects the shifting method (if applicable)
+    ExtWord : in std_logic;                           -- If '1', numbers are 32-bits
 
-    Y       : out std_logic_vector( N-1 downto 0 ));
+    -- Output Signals
+    Y       : out std_logic_vector( N-1 downto 0 ));  -- Result
 End Entity ShiftUnit;
 
+-----------------------------------------------------------------------------
+-- ShiftUnit Architecture
+-----------------------------------------------------------------------------
 Architecture rtl of ShiftUnit is
   -- Signals for potential inputs to Shift Barrels
   signal swappedA       : std_logic_vector(N-1 downto 0);
   signal tempA          : std_logic_vector(N-1 downto 0);
-  signal shiftCount     : unsigned(integer(ceil(log2(real(N)))) - 1 downto 0);
+  signal shiftCount     : unsigned(integer(ceil(log2(real(N)))) - 1 downto 0); -- For N=64, this means unsigned(6-1 downto 0)
 
   -- Barrel Shift Results
   signal shiftedLL_A    : std_logic_vector(N-1 downto 0);
@@ -31,33 +41,32 @@ Architecture rtl of ShiftUnit is
   -- Multiplexer Signals
   signal shiftedRightA  : std_logic_vector(N-1 downto 0);
   signal upperShiftedA  : std_logic_vector(N-1 downto 0); 
-  signal upperShiftedAa  : std_logic_vector(N-1 downto 0);
-  signal upperShiftedAb  : std_logic_vector(N-1 downto 0);
+  signal upperShiftedAa : std_logic_vector(N-1 downto 0);
+  signal upperShiftedAb : std_logic_vector(N-1 downto 0);
   signal lowerShiftedA  : std_logic_vector(N-1 downto 0); 
-  signal lowerShiftedAa  : std_logic_vector(N-1 downto 0); 
-  signal lowerShiftedAb  : std_logic_vector(N-1 downto 0); 
+  signal lowerShiftedAa : std_logic_vector(N-1 downto 0); 
+  signal lowerShiftedAb : std_logic_vector(N-1 downto 0); 
   signal AC             : std_logic_vector(N-1 downto 0);    
 
   signal extendedA      : std_logic_vector(N-1 downto 0);
   signal extendedAC     : std_logic_vector(N-1 downto 0);
-  
-  signal bitshift       : std_logic; -- flag used to signal if a bitshift is required during sign extension
+
+  -- Flag Signals
+  signal bitShift       : std_logic; --If '1', a bitshift is required during sign extension
 begin
   -- Extract ShiftCount from B
   shiftCount <= unsigned(B(integer(ceil(log2(real(N)))) - 1 downto 0)); -- lower 6 bits of the register for 64-bit operations
 
-    bitshift <= '0' when (ShiftCount(5)= '0' or ShiftFN = "00")
+  -- Sets the flag if bitshift is required during Sign Extension
+  bitShift <= '0' when (ShiftCount(5)= '0' or ShiftFN = "00")
     else '1' when (ShiftCount(5)='1' and ShiftFN /= "00")
     else 'X';
 
   -- Swapping lower 32 bits to upper
   swappedA(N - 1 downto N/2) <= A(N/2 - 1 downto 0);
-  -- SwapWordLoop: for index in (N/2 - 1) to 0 generate
-    -- swappedA(index) <= '0';
-  -- end generate SwapWordLoop;
   swappedA(N/2 - 1 downto 0) <= A(N - 1 downto N/2);
 
-  -- Mux for A
+  -- Mux to prepare "A" before barrel shifter
   with (ShiftFN(1) and ExtWord) select
     tempA <=
       A when '0',
@@ -86,7 +95,7 @@ begin
   -- Sign Extension on shiftedRightA (no 32bit shift)
   upperShiftedAa(N/2 - 1 downto 0) <= shiftedRightA(N/2 - 1 downto 0);
   sgnext_upper_shift_a: for i in N-1 downto N/2 generate
-	upperShiftedAa(i) <= shiftedRightA(N/2 - 1);
+	  upperShiftedAa(i) <= shiftedRightA(N/2 - 1);
   end generate sgnext_upper_shift_a;
   
   -- Sign Extension on shiftedRightA (with 32bit shift)
@@ -94,12 +103,13 @@ begin
   sgnext_upper_shift_b: for i in N-1 downto N/2 generate
     upperShiftedAb(i) <= shiftedRightA(N - 1);
   end generate sgnext_upper_shift_b;
-  
-  with bitshift select
+
+  -- Selects result based on whether a bitshift is required during sign extension
+  with bitShift select
     upperShiftedA <= 
-	upperShiftedAb when '0',
-	upperShiftedAa when '1',
-	(others => 'X') when others;
+      upperShiftedAb when '0',
+      upperShiftedAa when '1',
+      (others => 'X') when others;
   
   -- SgnExt Upper Mux
   with ExtWord select
@@ -111,7 +121,7 @@ begin
   -- Sign Extension on AC (no 32bit shift)
   lowerShiftedAa(N/2 - 1 downto 0) <= AC(N/2 - 1 downto 0);
   sgnext_lower_shift_a: for i in N-1 downto N/2 generate
-	lowerShiftedAa(i) <= AC(N/2 - 1);
+	  lowerShiftedAa(i) <= AC(N/2 - 1);
   end generate sgnext_lower_shift_a;
   
   -- Sign Extension on AC (with 32bit shift)
@@ -119,13 +129,13 @@ begin
   sgnext_lower_shift_b: for i in N-1 downto N/2 generate
     lowerShiftedAb(i) <= AC(N - 1);
   end generate sgnext_lower_shift_b;
-  
-  with bitshift select
-    lowerShiftedA <= 
-	lowerShiftedAa when '0',
-	lowerShiftedAb when '1',
-	(others => 'X') when others;
 
+  -- Selects result based on whether a bitshift is required during sign extension
+  with bitShift select
+    lowerShiftedA <= 
+	    lowerShiftedAa when '0',
+	    lowerShiftedAb when '1',
+	    (others => 'X') when others;
 
   -- SgnExt Lower Mux
   with ExtWord select
