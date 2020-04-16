@@ -30,17 +30,43 @@
 # 
 # vcom -work work -2008 -explicit -stats=time,-cmd,msg ConfigExU.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:01:35 on Apr 16,2020
+# Start time: 08:08:11 on Apr 16,2020
 # -- Loading package STANDARD
 # -- Compiling configuration FuncLUSim
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Loading entity TbLogicUnit
-# ** Error: (vcom-13) Recompile work.tblogicunit(behavioural) because work.tblogicunit has changed.
-# ** Error: ConfigExU.vhd(3): (vcom-1537) Block specification "behavioural" is not an architecture name.
-# ** Error: ConfigExU.vhd(4): VHDL Compiler exiting
-# End time: 07:01:35 on Apr 16,2020, Elapsed time: 0:00:00
+# -- Loading architecture behavioural of TbLogicUnit
+# -- Loading package std_logic_arith
+# -- Loading entity LogicUnit
+# -- Compiling configuration TimeLUSim
+# -- Loading entity TbLogicUnit
+# -- Loading architecture behavioural of TbLogicUnit
+# -- Loading entity LogicUnit
+# -- Compiling configuration FuncAUSim
+# -- Loading entity TbArithUnit
+# -- Loading architecture behavioural of TbArithUnit
+# -- Loading entity ArithUnit
+# -- Compiling configuration TimeAUSim
+# -- Loading entity TbArithUnit
+# -- Loading architecture behavioural of TbArithUnit
+# -- Loading entity ArithUnit
+# -- Compiling configuration FuncSUSim
+# -- Loading entity TbShiftUnit
+# -- Loading architecture behavioural of TbShiftUnit
+# -- Loading package MATH_REAL
+# -- Loading entity ShiftUnit
+# -- Compiling configuration TimeSUSim
+# -- Loading entity TbShiftUnit
+# -- Loading architecture behavioural of TbShiftUnit
+# -- Loading entity ShiftUnit
+# -- Compiling configuration FuncXUSim
+# -- Loading entity TbExecUnit
+# ** Error: (vcom-13) Recompile work.tbexecunit(behavioural) because work.tbexecunit has changed.
+# ** Error: ConfigExU.vhd(46): (vcom-1537) Block specification "behavioural" is not an architecture name.
+# ** Error: ConfigExU.vhd(47): VHDL Compiler exiting
+# End time: 08:08:11 on Apr 16,2020, Elapsed time: 0:00:00
 # Errors: 3, Warnings: 0
 # ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
 # Error in macro C:\Users\Jin-Desktop\Documents\Projects\ensc350-finalprojectpart2\ExU\Simulation\FunctionalArithUnit.do line 13

@@ -14,7 +14,7 @@
 # -- Loading entity OrGate
 # -- Loading entity XorGate
 # -- Loading package MATH_REAL
-# -- Loading entity MUX4bit
+# -- Loading entity MUX4
 # 
 # vcom -work work -2008 -explicit -stats=none ../SourceCode/Adder.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -43,7 +43,7 @@
 # -- Loading package MATH_REAL
 # -- Compiling entity SLL64
 # -- Compiling architecture rtl of SLL64
-# -- Loading entity MUX4bit
+# -- Loading entity MUX4
 # ** Warning: ../SourceCode/SLL64.vhd(68): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
 # ** Warning: ../SourceCode/SLL64.vhd(69): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
 # ** Warning: ../SourceCode/SLL64.vhd(70): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
@@ -62,7 +62,7 @@
 # -- Loading package MATH_REAL
 # -- Compiling entity SRL64
 # -- Compiling architecture rtl of SRL64
-# -- Loading entity MUX4bit
+# -- Loading entity MUX4
 # ** Warning: ../SourceCode/SRL64.vhd(68): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
 # ** Warning: ../SourceCode/SRL64.vhd(69): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
 # ** Warning: ../SourceCode/SRL64.vhd(70): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
@@ -81,7 +81,7 @@
 # -- Loading package MATH_REAL
 # -- Compiling entity SRA64
 # -- Compiling architecture rtl of SRA64
-# -- Loading entity MUX4bit
+# -- Loading entity MUX4
 # ** Warning: ../SourceCode/SRA64.vhd(68): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
 # ** Warning: ../SourceCode/SRA64.vhd(69): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
 # ** Warning: ../SourceCode/SRA64.vhd(70): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
@@ -117,7 +117,7 @@
 # -- Loading package MATH_REAL
 # -- Loading entity ShiftUnit
 # -- Loading entity LogicUnit
-# -- Loading entity MUX4bit
+# -- Loading entity MUX4
 # 
 # vcom -work work -2008 -explicit -stats=none TBExecUnit.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -130,7 +130,7 @@
 # 
 # vcom -work work -2008 -explicit -stats=time,-cmd,msg ConfigExU.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:01:46 on Apr 16,2020
+# Start time: 08:08:16 on Apr 16,2020
 # -- Loading package STANDARD
 # -- Compiling configuration FuncLUSim
 # -- Loading package TEXTIO
@@ -169,14 +169,14 @@
 # -- Loading entity TbExecUnit
 # -- Loading architecture behavioural of TbExecUnit
 # -- Loading entity ExecUnit
-# End time: 07:01:46 on Apr 16,2020, Elapsed time: 0:00:00
+# End time: 08:08:16 on Apr 16,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 #----------------------------------------------------------------------------------------------------------
 # Start the simulation
 #----------------------------------------------------------------------------------------------------------
 # vsim -gui work.FuncXUSim -t 100ps
 # vsim -gui work.FuncXUSim -t 100ps 
-# Start time: 07:01:46 on Apr 16,2020
+# Start time: 08:08:17 on Apr 16,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -190,7 +190,7 @@
 # Loading work.adder(rtl)
 # Loading work.shiftunit(rtl)
 # Loading work.sll64(rtl)
-# Loading work.mux4bit(rtl)
+# Loading work.mux4(rtl)
 # Loading work.srl64(rtl)
 # Loading work.sra64(rtl)
 # Loading work.logicunit(rtl)

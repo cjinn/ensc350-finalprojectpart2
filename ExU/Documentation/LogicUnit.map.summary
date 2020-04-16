@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Apr 16 07:01:41 2020
+Analysis & Synthesis Status : Successful - Thu Apr 16 08:08:43 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ExU
-Top-level Entity Name : ExecUnit
+Top-level Entity Name : LogicUnit
 Family : Cyclone IV E
-Total logic elements : 1,575
-    Total combinational functions : 1,575
+Total logic elements : 64
+    Total combinational functions : 64
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 204
+Total pins : 194
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
