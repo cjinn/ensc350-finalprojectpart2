@@ -1,0 +1,135 @@
+#----------------------------------------------------------------------------------------------------------
+# compile
+#----------------------------------------------------------------------------------------------------------
+# vcom -work work -2008 -explicit -stats=time,-cmd,msg ModelSim/LogicUnit.vho
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:26:28 on Apr 16,2020
+# ** Error: (vcom-7) Failed to open design unit file "ModelSim/LogicUnit.vho" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 05:26:28 on Apr 16,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro C:\Users\Jin-Desktop\Documents\Projects\ensc350-finalprojectpart2\ExU\Simulation\TimingLogicUnit.do line 7
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit -stats=time,-cmd,msg ModelSim/LogicUnit.vho"
+# Compile of Adder.vhd was successful.
+# Compile of ArithUnit.vhd failed with 4 errors.
+# Compile of ExecUnit.vhd was successful.
+# Compile of LogicUnit.vhd was successful.
+# Compile of ShiftUnit.vhd was successful.
+# Compile of SLL64.vhd was successful.
+# Compile of SRA64.vhd was successful.
+# Compile of SRL64.vhd was successful.
+# Compile of LogicGates.vhd was successful.
+# Compile of ConfigExU.vhd was successful.
+# Compile of TBArithUnit.vhd failed with 108 errors.
+# Compile of TBExecUnit.vhd failed with 80 errors.
+# Compile of TBLogicUnit.vhd failed with 21 errors.
+# Compile of TBShiftUnit.vhd failed with 24 errors.
+# 14 compiles, 5 failed with 237 errors.
+# Compile of Adder.vhd was successful.
+# Compile of ArithUnit.vhd failed with 4 errors.
+# Compile of ExecUnit.vhd was successful.
+# Compile of LogicUnit.vhd was successful.
+# Compile of ShiftUnit.vhd was successful.
+# Compile of SLL64.vhd was successful.
+# Compile of SRA64.vhd was successful.
+# Compile of SRL64.vhd was successful.
+# Compile of LogicGates.vhd was successful.
+# Compile of ConfigExU.vhd failed with 3 errors.
+# Compile of TBArithUnit.vhd failed with 108 errors.
+# Compile of TBExecUnit.vhd failed with 80 errors.
+# Compile of TBLogicUnit.vhd failed with 21 errors.
+# Compile of TBShiftUnit.vhd failed with 24 errors.
+# 14 compiles, 6 failed with 240 errors.
+# Compile of Adder.vhd was successful.
+# Compile of ArithUnit.vhd failed with 4 errors.
+# Compile of ExecUnit.vhd was successful.
+# Compile of LogicUnit.vhd was successful.
+# Compile of ShiftUnit.vhd was successful.
+# Compile of SLL64.vhd was successful.
+# Compile of SRA64.vhd was successful.
+# Compile of SRL64.vhd was successful.
+# Compile of LogicGates.vhd was successful.
+# Compile of ConfigExU.vhd failed with 3 errors.
+# Compile of TBArithUnit.vhd failed with 108 errors.
+# Compile of TBExecUnit.vhd failed with 80 errors.
+# Compile of TBLogicUnit.vhd failed with 21 errors.
+# Compile of TBShiftUnit.vhd failed with 24 errors.
+# 14 compiles, 6 failed with 240 errors.
+# Compile of Adder.vhd was successful.
+# Compile of ArithUnit.vhd was successful.
+# Compile of ExecUnit.vhd was successful.
+# Compile of LogicUnit.vhd was successful.
+# Compile of ShiftUnit.vhd was successful.
+# Compile of SLL64.vhd was successful.
+# Compile of SRA64.vhd was successful.
+# Compile of SRL64.vhd was successful.
+# Compile of LogicGates.vhd was successful.
+# Compile of ConfigExU.vhd failed with 3 errors.
+# Compile of TBArithUnit.vhd failed with 108 errors.
+# Compile of TBExecUnit.vhd failed with 80 errors.
+# Compile of TBLogicUnit.vhd failed with 21 errors.
+# Compile of TBShiftUnit.vhd failed with 24 errors.
+# 14 compiles, 5 failed with 236 errors.
+# Compile of Adder.vhd was successful.
+# Compile of ArithUnit.vhd was successful.
+# Compile of ExecUnit.vhd was successful.
+# Compile of LogicUnit.vhd was successful.
+# Compile of ShiftUnit.vhd was successful.
+# Compile of SLL64.vhd was successful.
+# Compile of SRA64.vhd was successful.
+# Compile of SRL64.vhd was successful.
+# Compile of LogicGates.vhd was successful.
+# Compile of ConfigExU.vhd failed with 3 errors.
+# Compile of TBArithUnit.vhd failed with 108 errors.
+# Compile of TBExecUnit.vhd failed with 80 errors.
+# Compile of TBLogicUnit.vhd failed with 21 errors.
+# Compile of TBShiftUnit.vhd failed with 24 errors.
+# 14 compiles, 5 failed with 236 errors.
+# Compile of Adder.vhd was successful.
+# Compile of ArithUnit.vhd was successful.
+# Compile of ExecUnit.vhd was successful.
+# Compile of LogicUnit.vhd was successful.
+# Compile of ShiftUnit.vhd was successful.
+# Compile of SLL64.vhd was successful.
+# Compile of SRA64.vhd was successful.
+# Compile of SRL64.vhd was successful.
+# Compile of LogicGates.vhd was successful.
+# Compile of ConfigExU.vhd failed with 3 errors.
+# Compile of TBArithUnit.vhd failed with 108 errors.
+# Compile of TBExecUnit.vhd failed with 80 errors.
+# Compile of TBLogicUnit.vhd failed with 21 errors.
+# Compile of TBShiftUnit.vhd failed with 24 errors.
+# 14 compiles, 5 failed with 236 errors.
+# Compile of Adder.vhd was successful.
+# Compile of ArithUnit.vhd was successful.
+# Compile of ExecUnit.vhd was successful.
+# Compile of LogicUnit.vhd failed with 2 errors.
+# Compile of ShiftUnit.vhd was successful.
+# Compile of SLL64.vhd was successful.
+# Compile of SRA64.vhd was successful.
+# Compile of SRL64.vhd was successful.
+# Compile of LogicGates.vhd was successful.
+# Compile of ConfigExU.vhd failed with 3 errors.
+# Compile of TBArithUnit.vhd failed with 108 errors.
+# Compile of TBExecUnit.vhd failed with 80 errors.
+# Compile of TBLogicUnit.vhd failed with 21 errors.
+# Compile of TBShiftUnit.vhd failed with 24 errors.
+# 14 compiles, 6 failed with 238 errors.
+# Compile of Adder.vhd was successful.
+# Compile of ArithUnit.vhd was successful.
+# Compile of ExecUnit.vhd was successful.
+# Compile of LogicUnit.vhd was successful.
+# Compile of ShiftUnit.vhd was successful.
+# Compile of SLL64.vhd was successful.
+# Compile of SRA64.vhd was successful.
+# Compile of SRL64.vhd was successful.
+# Compile of LogicGates.vhd was successful.
+# Compile of ConfigExU.vhd failed with 3 errors.
+# Compile of TBArithUnit.vhd failed with 108 errors.
+# Compile of TBExecUnit.vhd failed with 80 errors.
+# Compile of TBLogicUnit.vhd failed with 21 errors.
+# Compile of TBShiftUnit.vhd failed with 24 errors.
+# 14 compiles, 5 failed with 236 errors.
