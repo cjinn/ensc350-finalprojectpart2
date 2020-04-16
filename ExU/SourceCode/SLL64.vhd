@@ -33,20 +33,17 @@ Architecture rtl of SLL64 is
   signal secondMuxOutput  : std_logic_vector(N-1 downto 0);
   signal thirdMuxOutput  : std_logic_vector(N-1 downto 0);
 
-  -- TODO: Rename these signals
-  signal a  : std_logic_vector(N-1 downto 0);
-  signal b  : std_logic_vector(N-1 downto 0);
-  signal c  : std_logic_vector(N-1 downto 0);
+  signal SLLby16  : std_logic_vector(N-1 downto 0);
+  signal SLLby32  : std_logic_vector(N-1 downto 0);
+  signal SLLby48  : std_logic_vector(N-1 downto 0);
 
-  -- TODO: Rename these signals
-  signal d  : std_logic_vector(N-1 downto 0);
-  signal e  : std_logic_vector(N-1 downto 0);
-  signal f  : std_logic_vector(N-1 downto 0);
+  signal SLLby4  : std_logic_vector(N-1 downto 0);
+  signal SLLby8  : std_logic_vector(N-1 downto 0);
+  signal SLLby12  : std_logic_vector(N-1 downto 0);
 
-  -- TODO: Rename these signals
-  signal g  : std_logic_vector(N-1 downto 0);
-  signal h  : std_logic_vector(N-1 downto 0);
-  signal i  : std_logic_vector(N-1 downto 0);
+  signal SLLby1  : std_logic_vector(N-1 downto 0);
+  signal SLLby2  : std_logic_vector(N-1 downto 0);
+  signal SLLby3  : std_logic_vector(N-1 downto 0);
 
   -- 6-bit ShiftCount into three 2-bit signals for the 3 MUXs
   signal upperShiftCount  : std_logic_vector(1 downto 0);
@@ -65,28 +62,28 @@ begin
 
   -- Preparing Signals for the first MUX
   Xsignal <= X;
-  a <= Xsignal(47 downto 0)&(15 downto 0 => '0');
-  b <= Xsignal(31 downto 0)&(31 downto 0 => '0');
-  c <= Xsignal(15 downto 0)&(47 downto 0 => '0');
+  SLLby16 <= Xsignal(47 downto 0)&(15 downto 0 => '0');
+  SLLby32 <= Xsignal(31 downto 0)&(31 downto 0 => '0');
+  SLLby48 <= Xsignal(15 downto 0)&(47 downto 0 => '0');
 
   Mux32: entity work.MUX4 generic map(N)
-    port map(Xsignal, a, b, c, upperShiftCount, firstMuxOutput);
+    port map(Xsignal, SLLby16, SLLby32, SLLby48, upperShiftCount, firstMuxOutput);
 
   -- Preparing Signals for the second MUX
-  d <= firstMuxOutput(59 downto 0)&(3 downto 0 => '0');
-  e <= firstMuxOutput(55 downto 0)&(7 downto 0 => '0');
-  f <= firstMuxOutput(51 downto 0)&(11 downto 0 => '0');
+  SLLby4 <= firstMuxOutput(59 downto 0)&(3 downto 0 => '0');
+  SLLby8 <= firstMuxOutput(55 downto 0)&(7 downto 0 => '0');
+  SLLby12 <= firstMuxOutput(51 downto 0)&(11 downto 0 => '0');
   
   Mux8: entity work.MUX4 generic map(N)
-    port map(firstMuxOutput, d, e, f, middleShiftCount, secondMuxOutput);
+    port map(firstMuxOutput, SLLby4, SLLby8, SLLby12, middleShiftCount, secondMuxOutput);
 
   -- Preparing Signals for the third MUX
-  g <= secondMuxOutput(62 downto 0)&(0 => '0');
-  h <= secondMuxOutput(61 downto 0)&(1 downto 0 => '0');
-  i <= secondMuxOutput(60 downto 0)&(2 downto 0 => '0');
+  SLLby1 <= secondMuxOutput(62 downto 0)&(0 => '0');
+  SLLby2 <= secondMuxOutput(61 downto 0)&(1 downto 0 => '0');
+  SLLby3 <= secondMuxOutput(60 downto 0)&(2 downto 0 => '0');
 
   Mux4: entity work.MUX4 generic map(N)
-    port map(secondMuxOutput, g, h, i, lowerShiftCount, thirdMuxOutput);
+    port map(secondMuxOutput, SLLby1, SLLby2, SLLby3, lowerShiftCount, thirdMuxOutput);
 
   -- Set output signal
   Y <= thirdMuxOutput;
