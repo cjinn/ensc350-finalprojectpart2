@@ -73,7 +73,7 @@ begin
   -- If FuncClass = "01", Y <= ((N-1 downto 1 => '0')&AltBSignal)
   -- If FuncClass = "10", Y <= ShiftResult
   -- If FuncClass = "11", Y <= LogicResult
-  FuncClassMux  : entity Work.MUX4bit generic map(N) port map(
+  FuncClassMux  : entity Work.MUX4 generic map(N) port map(
     AltBuSignalExt,                       -- TODO: Add comment
     AltBSignalExt,                        -- TODO: Add comment
     ShiftResult,                          -- Result from ShiftUnit

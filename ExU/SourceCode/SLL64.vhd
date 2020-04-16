@@ -69,7 +69,7 @@ begin
   b <= Xsignal(31 downto 0)&(31 downto 0 => '0');
   c <= Xsignal(15 downto 0)&(47 downto 0 => '0');
 
-  Mux32: entity work.MUX4bit generic map(N)
+  Mux32: entity work.MUX4 generic map(N)
     port map(Xsignal, a, b, c, upperShiftCount, firstMuxOutput);
 
   -- Preparing Signals for the second MUX
@@ -77,7 +77,7 @@ begin
   e <= firstMuxOutput(55 downto 0)&(7 downto 0 => '0');
   f <= firstMuxOutput(51 downto 0)&(11 downto 0 => '0');
   
-  Mux8: entity work.MUX4bit generic map(N)
+  Mux8: entity work.MUX4 generic map(N)
     port map(firstMuxOutput, d, e, f, middleShiftCount, secondMuxOutput);
 
   -- Preparing Signals for the third MUX
@@ -85,7 +85,7 @@ begin
   h <= secondMuxOutput(61 downto 0)&(1 downto 0 => '0');
   i <= secondMuxOutput(60 downto 0)&(2 downto 0 => '0');
 
-  Mux4: entity work.MUX4bit generic map(N)
+  Mux4: entity work.MUX4 generic map(N)
     port map(secondMuxOutput, g, h, i, lowerShiftCount, thirdMuxOutput);
 
   -- Set output signal

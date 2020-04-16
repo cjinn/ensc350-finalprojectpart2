@@ -15,12 +15,12 @@ use IEEE.math_real.all;
 Entity SRL64 is
   Generic ( N : natural := 64 );
   Port(
-     -- Input Signals
-     X           : in std_logic_vector( N-1 downto 0 );                  -- Shifts 64-bit X based on ShiftCount
-     ShiftCount  : in unsigned(integer(ceil(log2(real(N))))-1 downto 0); -- For N=64, this means unsigned(6-1 downto 0)
+    -- Input Signals
+    X           : in std_logic_vector( N-1 downto 0 );                  -- Shifts 64-bit X based on ShiftCount
+    ShiftCount  : in unsigned(integer(ceil(log2(real(N))))-1 downto 0); -- For N=64, this means unsigned(6-1 downto 0)
  
-     -- Output Signals
-     Y           : out std_logic_vector( N-1 downto 0 ));                -- Shifted Result
+    -- Output Signals
+    Y           : out std_logic_vector( N-1 downto 0 ));                -- Shifted Result
  End Entity SRL64;
 
 -----------------------------------------------------------------------------
@@ -69,7 +69,7 @@ begin
   b <= (63 downto 32 => '0')&Xsignal(63 downto 32);
   c <= (63 downto 16 => '0')&Xsignal(63 downto 48);
 
-  Mux32: entity work.MUX4bit generic map(N) port map(
+  Mux32: entity work.MUX4 generic map(N) port map(
     Xsignal, a, b, c, upperShiftCount, firstMuxOutput);
 
   -- Preparing Signals for the second MUX
@@ -77,7 +77,7 @@ begin
   e <= (63 downto 56 => '0')&firstMuxOutput(63 downto 8);
   f <= (63 downto 52 => '0')&firstMuxOutput(63 downto 12);
   
-  Mux8: entity work.MUX4bit generic map(N) port map(
+  Mux8: entity work.MUX4 generic map(N) port map(
     firstMuxOutput, d, e, f, middleShiftCount, secondMuxOutput);
 
   -- Preparing Signals for the third MUX
@@ -85,7 +85,7 @@ begin
   h <= (63 downto 62 => '0')&secondMuxOutput(63 downto 2);
   i <= (63 downto 61 => '0')&secondMuxOutput(63 downto 3);
   
-  Mux4: entity work.MUX4bit generic map(N) port map(
+  Mux4: entity work.MUX4 generic map(N) port map(
     secondMuxOutput, g, h, i, lowerShiftCount, thirdMuxOutput);
 
   -- Set output signal

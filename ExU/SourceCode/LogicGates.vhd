@@ -96,7 +96,7 @@ use ieee.math_real.all;
 use ieee.numeric_std.all;
 use ieee.numeric_std.all;
 
-Entity MUX4bit is
+Entity MUX4 is
   Generic ( N : natural := 64);
   Port(
     -- Input Signals
@@ -105,12 +105,12 @@ Entity MUX4bit is
 
     -- Output Signals
     Y           : out std_logic_vector( N-1 downto 0 ));  -- Result signal as specified by selected signal
-End Entity MUX4bit;
+End Entity MUX4;
 
 ---------------------------------------------------------------------------
 -- N-bit 4-channel Multiplexer Architecture
 ---------------------------------------------------------------------------
-Architecture rtl of MUX4bit is
+Architecture rtl of MUX4 is
 begin
   with selectBit select
     Y <=

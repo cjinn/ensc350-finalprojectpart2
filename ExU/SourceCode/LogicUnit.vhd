@@ -40,6 +40,6 @@ begin
   -- If LogicFn = "01", Y <= A xor B
   -- If LogicFn = "10", Y <= A or B
   -- If LogicFn = "11", Y <= A and B
-  LogicUnitResultMux  : entity Work.MUX4bit generic map(N)
+  LogicUnitResultMux  : entity Work.MUX4 generic map(N)
     port map(B, XorAB, OrAB, AndAB, LogicFn, Y);
 end rtl;
