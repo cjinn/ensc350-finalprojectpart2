@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "04/16/2020 22:22:42"
+-- DATE "04/17/2020 04:21:30"
 
 -- 
 -- Device: Altera EP4CE115F29C7 Package FBGA780
@@ -81,13 +81,13 @@ ENTITY 	ArithUnit IS
 	AddnSub : IN std_logic;
 	NotA : IN std_logic;
 	ExtWord : IN std_logic;
-	AddY : OUT std_logic_vector(63 DOWNTO 0);
-	Y : OUT std_logic_vector(63 DOWNTO 0);
-	Cout : OUT std_logic;
-	Ovfl : OUT std_logic;
-	Zero : OUT std_logic;
-	AltB : OUT std_logic;
-	AltBu : OUT std_logic
+	AddY : BUFFER std_logic_vector(63 DOWNTO 0);
+	Y : BUFFER std_logic_vector(63 DOWNTO 0);
+	Cout : BUFFER std_logic;
+	Ovfl : BUFFER std_logic;
+	Zero : BUFFER std_logic;
+	AltB : BUFFER std_logic;
+	AltBu : BUFFER std_logic
 	);
 END ArithUnit;
 
