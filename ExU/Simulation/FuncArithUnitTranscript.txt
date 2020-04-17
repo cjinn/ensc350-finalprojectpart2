@@ -1,3 +1,5 @@
+# End time: 04:54:06 on Apr 17,2020, Elapsed time: 0:21:20
+# Errors: 2, Warnings: 3
 #----------------------------------------------------------------------------------------------------------
 # compile
 #----------------------------------------------------------------------------------------------------------
@@ -30,7 +32,7 @@
 # 
 # vcom -work work -2008 -explicit -stats=time,-cmd,msg ConfigExU.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:56:32 on Apr 17,2020
+# Start time: 04:54:07 on Apr 17,2020
 # -- Loading package STANDARD
 # -- Compiling configuration FuncLUSim
 # -- Loading package TEXTIO
@@ -38,7 +40,10 @@
 # -- Loading package NUMERIC_STD
 # -- Loading entity TbLogicUnit
 # -- Loading architecture behavioural of TbLogicUnit
-# -- Loading package std_logic_arith
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
 # -- Loading entity LogicUnit
 # -- Compiling configuration TimeLUSim
 # -- Loading entity TbLogicUnit
@@ -69,14 +74,14 @@
 # -- Loading entity TbExecUnit
 # -- Loading architecture behavioural of TbExecUnit
 # -- Loading entity ExecUnit
-# End time: 03:56:32 on Apr 17,2020, Elapsed time: 0:00:00
+# End time: 04:54:07 on Apr 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 #----------------------------------------------------------------------------------------------------------
 # Start the simulation
 #----------------------------------------------------------------------------------------------------------
 # vsim -gui work.FuncAUSim -t 100ps
 # vsim -gui work.FuncAUSim -t 100ps 
-# Start time: 03:56:32 on Apr 17,2020
+# Start time: 04:54:07 on Apr 17,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -92,7 +97,7 @@
 #----------------------------------------------------------------------------------------------------------
 # restart -f
 # run 1220 ns
-# ** Note: Using TestVectors from file ArithUnit01.tvs
+# ** Note: Using TestVectors from file ArithUnit00.tvs
 #    Time: 15 ns  Iteration: 0  Instance: /tbarithunit
 # ** Note: Simulation Completed
 #    Time: 1215 ns  Iteration: 0  Instance: /tbarithunit
